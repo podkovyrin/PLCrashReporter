@@ -273,29 +273,25 @@ error:
 
     /* Verify that the crash log is sufficently large */
     if (sizeof(struct PLCrashReportFileHeader) >= [data length]) {
-        populate_nserror(outError, PLCrashReporterErrorCrashReportInvalid, NSLocalizedString(@"Could not decode truncated crash log",
-                                                                                             @"Crash log decoding error message"));
+        populate_nserror(outError, PLCrashReporterErrorCrashReportInvalid, @"Could not decode truncated crash log");
         return NULL;
     }
 
     /* Check the file magic */
     if (memcmp(header->magic, PLCRASH_REPORT_FILE_MAGIC, strlen(PLCRASH_REPORT_FILE_MAGIC)) != 0) {
-        populate_nserror(outError, PLCrashReporterErrorCrashReportInvalid,NSLocalizedString(@"Could not decode invalid crash log header",
-                                                                                            @"Crash log decoding error message"));
+        populate_nserror(outError, PLCrashReporterErrorCrashReportInvalid,@"Could not decode invalid crash log header");
         return NULL;
     }
 
     /* Check the version */
     if(header->version != PLCRASH_REPORT_FILE_VERSION) {
-        populate_nserror(outError, PLCrashReporterErrorCrashReportInvalid, [NSString stringWithFormat: NSLocalizedString(@"Could not decode unsupported crash report version: %d", 
-                                                                                                                         @"Crash log decoding message"), header->version]);
+        populate_nserror(outError, PLCrashReporterErrorCrashReportInvalid, [NSString stringWithFormat:@"Could not decode unsupported crash report version: %d", header->version]);
         return NULL;
     }
 
     Plcrash__CrashReport *crashReport = plcrash__crash_report__unpack(&protobuf_c_system_allocator, [data length] - sizeof(struct PLCrashReportFileHeader), header->data);
     if (crashReport == NULL) {
-        populate_nserror(outError, PLCrashReporterErrorCrashReportInvalid, NSLocalizedString(@"An unknown error occured decoding the crash report", 
-                                                                                             @"Crash log decoding error message"));
+        populate_nserror(outError, PLCrashReporterErrorCrashReportInvalid, @"An unknown error occured decoding the crash report");
         return NULL;
     }
 
@@ -325,15 +321,13 @@ error:
     /* Validate */
     if (systemInfo == NULL) {
         populate_nserror(outError, PLCrashReporterErrorCrashReportInvalid, 
-                         NSLocalizedString(@"Crash report is missing System Information section", 
-                                           @"Missing sysinfo in crash report"));
+                         @"Crash report is missing System Information section");
         return nil;
     }
     
     if (systemInfo->os_version == NULL) {
         populate_nserror(outError, PLCrashReporterErrorCrashReportInvalid, 
-                         NSLocalizedString(@"Crash report is missing System Information OS version field", 
-                                           @"Missing sysinfo operating system in crash report"));
+                         @"Crash report is missing System Information OS version field");
         return nil;
     }
 
@@ -371,8 +365,7 @@ error:
     /* Validate */
     if (processorInfo == NULL) {
         populate_nserror(outError, PLCrashReporterErrorCrashReportInvalid, 
-                         NSLocalizedString(@"Crash report is missing processor info section", 
-                                           @"Missing processor info in crash report"));
+                         @"Crash report is missing processor info section");
         return nil;
     }
 
@@ -420,8 +413,7 @@ error:
 
 		default:
             populate_nserror(outError, PLCrashReporterErrorCrashReportInvalid,
-                             NSLocalizedString(@"Crash report has an unknown architecture",
-                                               @"Unknown architecture in crash report"));
+                             @"Crash report has an unknown architecture");
 			return nil;
 	}
 
@@ -440,8 +432,7 @@ error:
     /* Validate */
     if (machineInfo == NULL) {
         populate_nserror(outError, PLCrashReporterErrorCrashReportInvalid, 
-                         NSLocalizedString(@"Crash report is missing Machine Information section", 
-                                           @"Missing machine_info in crash report"));
+                         @"Crash report is missing Machine Information section");
         return nil;
     }
 
@@ -474,24 +465,21 @@ error:
     /* Validate */
     if (applicationInfo == NULL) {
         populate_nserror(outError, PLCrashReporterErrorCrashReportInvalid, 
-                         NSLocalizedString(@"Crash report is missing Application Information section", 
-                                           @"Missing app info in crash report"));
+                         @"Crash report is missing Application Information section");
         return nil;
     }
 
     /* Identifier available? */
     if (applicationInfo->identifier == NULL) {
         populate_nserror(outError, PLCrashReporterErrorCrashReportInvalid, 
-                         NSLocalizedString(@"Crash report is missing Application Information app identifier field", 
-                                           @"Missing app identifier in crash report"));
+                         @"Crash report is missing Application Information app identifier field");
         return nil;
     }
 
     /* Version available? */
     if (applicationInfo->version == NULL) {
         populate_nserror(outError, PLCrashReporterErrorCrashReportInvalid, 
-                         NSLocalizedString(@"Crash report is missing Application Information app version field", 
-                                           @"Missing app version in crash report"));
+                         @"Crash report is missing Application Information app version field");
         return nil;
     }
     
@@ -519,8 +507,7 @@ error:
     /* Validate */
     if (processInfo == NULL) {
         populate_nserror(outError, PLCrashReporterErrorCrashReportInvalid, 
-                         NSLocalizedString(@"Crash report is missing Process Information section", 
-                                           @"Missing process info in crash report"));
+                         @"Crash report is missing Process Information section");
         return nil;
     }
     
@@ -565,8 +552,7 @@ error:
 - (PLCrashReportSymbolInfo *) extractSymbolInfo: (Plcrash__CrashReport__Symbol *) symbol error: (NSError **) outError {
     if (symbol == NULL) {
         populate_nserror(outError, PLCrashReporterErrorCrashReportInvalid,
-                         NSLocalizedString(@"Crash report is missing symbol information",
-                                           @"Missing symbol info in crash report"));
+                         @"Crash report is missing symbol information");
         return nil;
     }
     
@@ -584,8 +570,7 @@ error:
     /* There should be at least one thread */
     if (stackFrame == NULL) {
         populate_nserror(outError, PLCrashReporterErrorCrashReportInvalid,
-                         NSLocalizedString(@"Crash report is missing stack frame information",
-                                           @"Missing stack frame info in crash report"));
+                         @"Crash report is missing stack frame information");
         return nil;
     }
     
@@ -607,8 +592,7 @@ error:
     /* There should be at least one thread */
     if (crashReport->n_threads == 0) {
         populate_nserror(outError, PLCrashReporterErrorCrashReportInvalid,
-                         NSLocalizedString(@"Crash report is missing thread state information",
-                                           @"Missing thread info in crash report"));
+                         @"Crash report is missing thread state information");
         return nil;
     }
 
@@ -664,8 +648,7 @@ error:
     /* There should be at least one image */
     if (crashReport->n_binary_images == 0) {
         populate_nserror(outError, PLCrashReporterErrorCrashReportInvalid,
-                         NSLocalizedString(@"Crash report is missing binary image information",
-                                           @"Missing image info in crash report"));
+                         @"Crash report is missing binary image information");
         return nil;
     }
 
@@ -719,24 +702,21 @@ error:
     /* Validate */
     if (exceptionInfo == NULL) {
         populate_nserror(outError, PLCrashReporterErrorCrashReportInvalid, 
-                         NSLocalizedString(@"Crash report is missing Exception Information section", 
-                                           @"Missing appinfo in crash report"));
+                         @"Crash report is missing Exception Information section");
         return nil;
     }
     
     /* Name available? */
     if (exceptionInfo->name == NULL) {
         populate_nserror(outError, PLCrashReporterErrorCrashReportInvalid, 
-                         NSLocalizedString(@"Crash report is missing exception name field", 
-                                           @"Missing appinfo operating system in crash report"));
+                         @"Crash report is missing exception name field");
         return nil;
     }
     
     /* Reason available? */
     if (exceptionInfo->reason == NULL) {
         populate_nserror(outError, PLCrashReporterErrorCrashReportInvalid, 
-                         NSLocalizedString(@"Crash report is missing exception reason field", 
-                                           @"Missing appinfo operating system in crash report"));
+                         @"Crash report is missing exception reason field");
         return nil;
     }
     
@@ -776,24 +756,21 @@ error:
     /* Validate */
     if (signalInfo == NULL) {
         populate_nserror(outError, PLCrashReporterErrorCrashReportInvalid, 
-                         NSLocalizedString(@"Crash report is missing Signal Information section", 
-                                           @"Missing appinfo in crash report"));
+                         @"Crash report is missing Signal Information section");
         return nil;
     }
     
     /* Name available? */
     if (signalInfo->name == NULL) {
         populate_nserror(outError, PLCrashReporterErrorCrashReportInvalid, 
-                         NSLocalizedString(@"Crash report is missing signal name field", 
-                                           @"Missing appinfo operating system in crash report"));
+                         @"Crash report is missing signal name field");
         return nil;
     }
     
     /* Code available? */
     if (signalInfo->code == NULL) {
         populate_nserror(outError, PLCrashReporterErrorCrashReportInvalid, 
-                         NSLocalizedString(@"Crash report is missing signal code field", 
-                                           @"Missing appinfo operating system in crash report"));
+                         @"Crash report is missing signal code field");
         return nil;
     }
     
@@ -813,16 +790,14 @@ error:
     /* Validate */
     if (machExceptionInfo == NULL) {
         populate_nserror(outError, PLCrashReporterErrorCrashReportInvalid,
-                         NSLocalizedString(@"Crash report is missing Mach Exception Information section",
-                                           @"Missing mach exception info in crash report"));
+                         @"Crash report is missing Mach Exception Information section");
         return nil;
     }
     
     /* Sanity check; there should really only ever be 2 */
     if (machExceptionInfo->n_codes > UINT8_MAX) {
         populate_nserror(outError, PLCrashReporterErrorCrashReportInvalid,
-                         NSLocalizedString(@"Crash report includes too many Mach Exception codes",
-                                           @"Invalid mach exception info in crash report"));
+                         @"Crash report includes too many Mach Exception codes");
         return nil;
     }
     
