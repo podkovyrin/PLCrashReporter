@@ -575,7 +575,6 @@
 		05E732000EFA1AE3005EDFB7 /* PLCrashReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F40ACA0EF7379F008050CF /* PLCrashReporter.m */; };
 		05E732010EFA1AE3005EDFB7 /* PLCrashReport.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F411A50EF8DA31008050CF /* PLCrashReport.m */; };
 		05E732020EFA1AE3005EDFB7 /* crash_report.proto in Sources */ = {isa = PBXBuildFile; fileRef = 059670C70EEFAC3A008A0601 /* crash_report.proto */; };
-		05E732030EFA1AE3005EDFB7 /* protobuf-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 05F40F830EF850FC008050CF /* protobuf-c.c */; };
 		05E732040EFA1AE3005EDFB7 /* PLCrashReportSystemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F413440EF995C0008050CF /* PLCrashReportSystemInfo.m */; };
 		05E732050EFA1AE3005EDFB7 /* PLCrashReportApplicationInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F4141D0EF9A6C4008050CF /* PLCrashReportApplicationInfo.m */; };
 		05E732060EFA1AE3005EDFB7 /* PLCrashReportThreadInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F414810EF9BFAC008050CF /* PLCrashReportThreadInfo.m */; };
@@ -741,9 +740,6 @@
 		05F40CF20EF7AC0E008050CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F40CF10EF7AC0E008050CF /* main.m */; };
 		05F40CF50EF7AC82008050CF /* CrashReporter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* CrashReporter.framework */; };
 		05F40CFA0EF7AC96008050CF /* CrashReporter.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* CrashReporter.framework */; };
-		05F40F840EF850FC008050CF /* protobuf-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 05F40F830EF850FC008050CF /* protobuf-c.c */; };
-		05F40F850EF850FC008050CF /* protobuf-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 05F40F830EF850FC008050CF /* protobuf-c.c */; };
-		05F40F860EF850FC008050CF /* protobuf-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 05F40F830EF850FC008050CF /* protobuf-c.c */; };
 		05F411A60EF8DA31008050CF /* PLCrashReport.h in Headers */ = {isa = PBXBuildFile; fileRef = 05F411A40EF8DA31008050CF /* PLCrashReport.h */; };
 		05F411A70EF8DA31008050CF /* PLCrashReport.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F411A50EF8DA31008050CF /* PLCrashReport.m */; };
 		05F411A80EF8DA31008050CF /* PLCrashReport.h in Headers */ = {isa = PBXBuildFile; fileRef = 05F411A40EF8DA31008050CF /* PLCrashReport.h */; };
@@ -756,9 +752,6 @@
 		05F411F30EF8DFD3008050CF /* crash_report.proto in Sources */ = {isa = PBXBuildFile; fileRef = 059670C70EEFAC3A008A0601 /* crash_report.proto */; };
 		05F411F40EF8DFDA008050CF /* crash_report.proto in Sources */ = {isa = PBXBuildFile; fileRef = 059670C70EEFAC3A008A0601 /* crash_report.proto */; };
 		05F411F50EF8DFE4008050CF /* crash_report.proto in Sources */ = {isa = PBXBuildFile; fileRef = 059670C70EEFAC3A008A0601 /* crash_report.proto */; };
-		05F411F70EF8E001008050CF /* protobuf-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 05F40F830EF850FC008050CF /* protobuf-c.c */; };
-		05F411F90EF8E013008050CF /* protobuf-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 05F40F830EF850FC008050CF /* protobuf-c.c */; };
-		05F411FB0EF8E023008050CF /* protobuf-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 05F40F830EF850FC008050CF /* protobuf-c.c */; };
 		05F413450EF995C0008050CF /* PLCrashReportSystemInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 05F413430EF995C0008050CF /* PLCrashReportSystemInfo.h */; };
 		05F413460EF995C0008050CF /* PLCrashReportSystemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F413440EF995C0008050CF /* PLCrashReportSystemInfo.m */; };
 		05F413470EF995C0008050CF /* PLCrashReportSystemInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 05F413430EF995C0008050CF /* PLCrashReportSystemInfo.h */; };
@@ -800,6 +793,223 @@
 		05F76DDE16305A6A00A668C7 /* PLCrashAsyncMachOImage.c in Sources */ = {isa = PBXBuildFile; fileRef = 05F76DD2162F213E00A668C7 /* PLCrashAsyncMachOImage.c */; };
 		05F76DDF16305A7000A668C7 /* PLCrashAsyncMachOImage.c in Sources */ = {isa = PBXBuildFile; fileRef = 05F76DD2162F213E00A668C7 /* PLCrashAsyncMachOImage.c */; };
 		05FDFC84168950F600463E43 /* PLCrashMachExceptionServerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FDFC83168950F600463E43 /* PLCrashMachExceptionServerTests.m */; };
+		2ABCA83E2357794E00092C09 /* INSTALL_RECEIPT.json in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8252357794E00092C09 /* INSTALL_RECEIPT.json */; };
+		2ABCA83F2357794E00092C09 /* INSTALL_RECEIPT.json in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8252357794E00092C09 /* INSTALL_RECEIPT.json */; };
+		2ABCA8402357794E00092C09 /* INSTALL_RECEIPT.json in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8252357794E00092C09 /* INSTALL_RECEIPT.json */; };
+		2ABCA8412357794E00092C09 /* INSTALL_RECEIPT.json in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8252357794E00092C09 /* INSTALL_RECEIPT.json */; };
+		2ABCA8422357794E00092C09 /* INSTALL_RECEIPT.json in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8252357794E00092C09 /* INSTALL_RECEIPT.json */; };
+		2ABCA8432357794E00092C09 /* INSTALL_RECEIPT.json in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8252357794E00092C09 /* INSTALL_RECEIPT.json */; };
+		2ABCA8442357794E00092C09 /* INSTALL_RECEIPT.json in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8252357794E00092C09 /* INSTALL_RECEIPT.json */; };
+		2ABCA8452357794E00092C09 /* INSTALL_RECEIPT.json in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8252357794E00092C09 /* INSTALL_RECEIPT.json */; };
+		2ABCA8462357794E00092C09 /* INSTALL_RECEIPT.json in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8252357794E00092C09 /* INSTALL_RECEIPT.json */; };
+		2ABCA8472357794E00092C09 /* INSTALL_RECEIPT.json in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8252357794E00092C09 /* INSTALL_RECEIPT.json */; };
+		2ABCA8482357794E00092C09 /* INSTALL_RECEIPT.json in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8252357794E00092C09 /* INSTALL_RECEIPT.json */; };
+		2ABCA8492357794E00092C09 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8262357794E00092C09 /* LICENSE */; };
+		2ABCA84A2357794E00092C09 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8262357794E00092C09 /* LICENSE */; };
+		2ABCA84B2357794E00092C09 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8262357794E00092C09 /* LICENSE */; };
+		2ABCA84C2357794E00092C09 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8262357794E00092C09 /* LICENSE */; };
+		2ABCA84D2357794E00092C09 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8262357794E00092C09 /* LICENSE */; };
+		2ABCA84E2357794E00092C09 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8262357794E00092C09 /* LICENSE */; };
+		2ABCA84F2357794E00092C09 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8262357794E00092C09 /* LICENSE */; };
+		2ABCA8502357794E00092C09 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8262357794E00092C09 /* LICENSE */; };
+		2ABCA8512357794E00092C09 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8262357794E00092C09 /* LICENSE */; };
+		2ABCA8522357794E00092C09 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8262357794E00092C09 /* LICENSE */; };
+		2ABCA8532357794E00092C09 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8262357794E00092C09 /* LICENSE */; };
+		2ABCA8542357794E00092C09 /* protoc-c in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8282357794E00092C09 /* protoc-c */; };
+		2ABCA8552357794E00092C09 /* protoc-c in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8282357794E00092C09 /* protoc-c */; };
+		2ABCA8562357794E00092C09 /* protoc-c in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8282357794E00092C09 /* protoc-c */; };
+		2ABCA8572357794E00092C09 /* protoc-c in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8282357794E00092C09 /* protoc-c */; };
+		2ABCA8582357794E00092C09 /* protoc-c in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8282357794E00092C09 /* protoc-c */; };
+		2ABCA8592357794E00092C09 /* protoc-c in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8282357794E00092C09 /* protoc-c */; };
+		2ABCA85A2357794E00092C09 /* protoc-c in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8282357794E00092C09 /* protoc-c */; };
+		2ABCA85B2357794E00092C09 /* protoc-c in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8282357794E00092C09 /* protoc-c */; };
+		2ABCA85C2357794E00092C09 /* protoc-c in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8282357794E00092C09 /* protoc-c */; };
+		2ABCA85D2357794E00092C09 /* protoc-c in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8282357794E00092C09 /* protoc-c */; };
+		2ABCA85E2357794E00092C09 /* protoc-c in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8282357794E00092C09 /* protoc-c */; };
+		2ABCA85F2357794E00092C09 /* ChangeLog in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8292357794E00092C09 /* ChangeLog */; };
+		2ABCA8602357794E00092C09 /* ChangeLog in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8292357794E00092C09 /* ChangeLog */; };
+		2ABCA8612357794E00092C09 /* ChangeLog in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8292357794E00092C09 /* ChangeLog */; };
+		2ABCA8622357794E00092C09 /* ChangeLog in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8292357794E00092C09 /* ChangeLog */; };
+		2ABCA8632357794E00092C09 /* ChangeLog in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8292357794E00092C09 /* ChangeLog */; };
+		2ABCA8642357794E00092C09 /* ChangeLog in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8292357794E00092C09 /* ChangeLog */; };
+		2ABCA8652357794E00092C09 /* ChangeLog in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8292357794E00092C09 /* ChangeLog */; };
+		2ABCA8662357794E00092C09 /* ChangeLog in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8292357794E00092C09 /* ChangeLog */; };
+		2ABCA8672357794E00092C09 /* ChangeLog in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8292357794E00092C09 /* ChangeLog */; };
+		2ABCA8682357794E00092C09 /* ChangeLog in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8292357794E00092C09 /* ChangeLog */; };
+		2ABCA8692357794E00092C09 /* ChangeLog in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8292357794E00092C09 /* ChangeLog */; };
+		2ABCA86A2357794E00092C09 /* protobuf-c.h in Headers */ = {isa = PBXBuildFile; fileRef = 2ABCA82D2357794E00092C09 /* protobuf-c.h */; };
+		2ABCA86B2357794E00092C09 /* protobuf-c.h in Headers */ = {isa = PBXBuildFile; fileRef = 2ABCA82D2357794E00092C09 /* protobuf-c.h */; };
+		2ABCA86C2357794E00092C09 /* protobuf-c.h in Headers */ = {isa = PBXBuildFile; fileRef = 2ABCA82D2357794E00092C09 /* protobuf-c.h */; };
+		2ABCA86D2357794E00092C09 /* protobuf-c.h in Headers */ = {isa = PBXBuildFile; fileRef = 2ABCA82D2357794E00092C09 /* protobuf-c.h */; };
+		2ABCA86E2357794E00092C09 /* protobuf-c.h in Headers */ = {isa = PBXBuildFile; fileRef = 2ABCA82D2357794E00092C09 /* protobuf-c.h */; };
+		2ABCA86F2357794E00092C09 /* protobuf-c.h in Headers */ = {isa = PBXBuildFile; fileRef = 2ABCA82D2357794E00092C09 /* protobuf-c.h */; };
+		2ABCA8702357794E00092C09 /* protobuf-c.h in Headers */ = {isa = PBXBuildFile; fileRef = 2ABCA82F2357794E00092C09 /* protobuf-c.h */; };
+		2ABCA8712357794E00092C09 /* protobuf-c.h in Headers */ = {isa = PBXBuildFile; fileRef = 2ABCA82F2357794E00092C09 /* protobuf-c.h */; };
+		2ABCA8722357794E00092C09 /* protobuf-c.h in Headers */ = {isa = PBXBuildFile; fileRef = 2ABCA82F2357794E00092C09 /* protobuf-c.h */; };
+		2ABCA8732357794E00092C09 /* protobuf-c.h in Headers */ = {isa = PBXBuildFile; fileRef = 2ABCA82F2357794E00092C09 /* protobuf-c.h */; };
+		2ABCA8742357794E00092C09 /* protobuf-c.h in Headers */ = {isa = PBXBuildFile; fileRef = 2ABCA82F2357794E00092C09 /* protobuf-c.h */; };
+		2ABCA8752357794E00092C09 /* protobuf-c.h in Headers */ = {isa = PBXBuildFile; fileRef = 2ABCA82F2357794E00092C09 /* protobuf-c.h */; };
+		2ABCA8762357794E00092C09 /* TODO in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8302357794E00092C09 /* TODO */; };
+		2ABCA8772357794E00092C09 /* TODO in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8302357794E00092C09 /* TODO */; };
+		2ABCA8782357794E00092C09 /* TODO in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8302357794E00092C09 /* TODO */; };
+		2ABCA8792357794E00092C09 /* TODO in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8302357794E00092C09 /* TODO */; };
+		2ABCA87A2357794E00092C09 /* TODO in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8302357794E00092C09 /* TODO */; };
+		2ABCA87B2357794E00092C09 /* TODO in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8302357794E00092C09 /* TODO */; };
+		2ABCA87C2357794E00092C09 /* TODO in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8302357794E00092C09 /* TODO */; };
+		2ABCA87D2357794E00092C09 /* TODO in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8302357794E00092C09 /* TODO */; };
+		2ABCA87E2357794E00092C09 /* TODO in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8302357794E00092C09 /* TODO */; };
+		2ABCA87F2357794E00092C09 /* TODO in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8302357794E00092C09 /* TODO */; };
+		2ABCA8802357794E00092C09 /* TODO in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8302357794E00092C09 /* TODO */; };
+		2ABCA8812357794E00092C09 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8312357794E00092C09 /* README.md */; };
+		2ABCA8822357794E00092C09 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8312357794E00092C09 /* README.md */; };
+		2ABCA8832357794E00092C09 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8312357794E00092C09 /* README.md */; };
+		2ABCA8842357794E00092C09 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8312357794E00092C09 /* README.md */; };
+		2ABCA8852357794E00092C09 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8312357794E00092C09 /* README.md */; };
+		2ABCA8862357794E00092C09 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8312357794E00092C09 /* README.md */; };
+		2ABCA8872357794E00092C09 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8312357794E00092C09 /* README.md */; };
+		2ABCA8882357794E00092C09 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8312357794E00092C09 /* README.md */; };
+		2ABCA8892357794E00092C09 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8312357794E00092C09 /* README.md */; };
+		2ABCA88A2357794E00092C09 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8312357794E00092C09 /* README.md */; };
+		2ABCA88B2357794E00092C09 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8312357794E00092C09 /* README.md */; };
+		2ABCA88C2357794E00092C09 /* libprotobuf-c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8332357794E00092C09 /* libprotobuf-c.a */; };
+		2ABCA88D2357794E00092C09 /* libprotobuf-c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8332357794E00092C09 /* libprotobuf-c.a */; };
+		2ABCA88E2357794E00092C09 /* libprotobuf-c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8332357794E00092C09 /* libprotobuf-c.a */; };
+		2ABCA88F2357794E00092C09 /* libprotobuf-c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8332357794E00092C09 /* libprotobuf-c.a */; };
+		2ABCA8902357794E00092C09 /* libprotobuf-c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8332357794E00092C09 /* libprotobuf-c.a */; };
+		2ABCA8912357794E00092C09 /* libprotobuf-c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8332357794E00092C09 /* libprotobuf-c.a */; };
+		2ABCA8922357794E00092C09 /* libprotobuf-c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8332357794E00092C09 /* libprotobuf-c.a */; };
+		2ABCA8932357794E00092C09 /* libprotobuf-c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8332357794E00092C09 /* libprotobuf-c.a */; };
+		2ABCA8942357794E00092C09 /* libprotobuf-c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8332357794E00092C09 /* libprotobuf-c.a */; };
+		2ABCA8952357794E00092C09 /* libprotobuf-c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8332357794E00092C09 /* libprotobuf-c.a */; };
+		2ABCA8962357794E00092C09 /* libprotobuf-c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8332357794E00092C09 /* libprotobuf-c.a */; };
+		2ABCA8972357794E00092C09 /* libprotobuf-c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8332357794E00092C09 /* libprotobuf-c.a */; };
+		2ABCA8982357794E00092C09 /* libprotobuf-c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8332357794E00092C09 /* libprotobuf-c.a */; };
+		2ABCA8992357794E00092C09 /* libprotobuf-c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8332357794E00092C09 /* libprotobuf-c.a */; };
+		2ABCA89A2357794E00092C09 /* libprotobuf-c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8332357794E00092C09 /* libprotobuf-c.a */; };
+		2ABCA89B2357794E00092C09 /* libprotobuf-c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8332357794E00092C09 /* libprotobuf-c.a */; };
+		2ABCA89C2357794E00092C09 /* libprotobuf-c.pc in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8352357794E00092C09 /* libprotobuf-c.pc */; };
+		2ABCA89D2357794E00092C09 /* libprotobuf-c.pc in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8352357794E00092C09 /* libprotobuf-c.pc */; };
+		2ABCA89E2357794E00092C09 /* libprotobuf-c.pc in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8352357794E00092C09 /* libprotobuf-c.pc */; };
+		2ABCA89F2357794E00092C09 /* libprotobuf-c.pc in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8352357794E00092C09 /* libprotobuf-c.pc */; };
+		2ABCA8A02357794E00092C09 /* libprotobuf-c.pc in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8352357794E00092C09 /* libprotobuf-c.pc */; };
+		2ABCA8A12357794E00092C09 /* libprotobuf-c.pc in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8352357794E00092C09 /* libprotobuf-c.pc */; };
+		2ABCA8A22357794E00092C09 /* libprotobuf-c.pc in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8352357794E00092C09 /* libprotobuf-c.pc */; };
+		2ABCA8A32357794E00092C09 /* libprotobuf-c.pc in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8352357794E00092C09 /* libprotobuf-c.pc */; };
+		2ABCA8A42357794E00092C09 /* libprotobuf-c.pc in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8352357794E00092C09 /* libprotobuf-c.pc */; };
+		2ABCA8A52357794E00092C09 /* libprotobuf-c.pc in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8352357794E00092C09 /* libprotobuf-c.pc */; };
+		2ABCA8A62357794E00092C09 /* libprotobuf-c.pc in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCA8352357794E00092C09 /* libprotobuf-c.pc */; };
+		2ABCA8A72357794E00092C09 /* libprotobuf-c.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8362357794E00092C09 /* libprotobuf-c.dylib */; };
+		2ABCA8A82357794E00092C09 /* libprotobuf-c.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8362357794E00092C09 /* libprotobuf-c.dylib */; };
+		2ABCA8A92357794E00092C09 /* libprotobuf-c.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8362357794E00092C09 /* libprotobuf-c.dylib */; };
+		2ABCA8AA2357794E00092C09 /* libprotobuf-c.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8362357794E00092C09 /* libprotobuf-c.dylib */; };
+		2ABCA8AB2357794E00092C09 /* libprotobuf-c.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8362357794E00092C09 /* libprotobuf-c.dylib */; };
+		2ABCA8AC2357794E00092C09 /* libprotobuf-c.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8362357794E00092C09 /* libprotobuf-c.dylib */; };
+		2ABCA8AD2357794E00092C09 /* libprotobuf-c.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8362357794E00092C09 /* libprotobuf-c.dylib */; };
+		2ABCA8AE2357794E00092C09 /* libprotobuf-c.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8362357794E00092C09 /* libprotobuf-c.dylib */; };
+		2ABCA8AF2357794E00092C09 /* libprotobuf-c.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8362357794E00092C09 /* libprotobuf-c.dylib */; };
+		2ABCA8B02357794E00092C09 /* libprotobuf-c.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8362357794E00092C09 /* libprotobuf-c.dylib */; };
+		2ABCA8B12357794E00092C09 /* libprotobuf-c.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8362357794E00092C09 /* libprotobuf-c.dylib */; };
+		2ABCA8B22357794E00092C09 /* libprotobuf-c.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8362357794E00092C09 /* libprotobuf-c.dylib */; };
+		2ABCA8B32357794E00092C09 /* libprotobuf-c.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8362357794E00092C09 /* libprotobuf-c.dylib */; };
+		2ABCA8B42357794E00092C09 /* libprotobuf-c.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8362357794E00092C09 /* libprotobuf-c.dylib */; };
+		2ABCA8B52357794E00092C09 /* libprotobuf-c.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8362357794E00092C09 /* libprotobuf-c.dylib */; };
+		2ABCA8B62357794E00092C09 /* libprotobuf-c.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8362357794E00092C09 /* libprotobuf-c.dylib */; };
+		2ABCA8B72357794E00092C09 /* libprotoc.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8372357794E00092C09 /* libprotoc.dylib */; };
+		2ABCA8B82357794F00092C09 /* libprotoc.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8372357794E00092C09 /* libprotoc.dylib */; };
+		2ABCA8B92357794F00092C09 /* libprotoc.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8372357794E00092C09 /* libprotoc.dylib */; };
+		2ABCA8BA2357794F00092C09 /* libprotoc.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8372357794E00092C09 /* libprotoc.dylib */; };
+		2ABCA8BB2357794F00092C09 /* libprotoc.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8372357794E00092C09 /* libprotoc.dylib */; };
+		2ABCA8BC2357794F00092C09 /* libprotoc.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8372357794E00092C09 /* libprotoc.dylib */; };
+		2ABCA8BD2357794F00092C09 /* libprotoc.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8372357794E00092C09 /* libprotoc.dylib */; };
+		2ABCA8BE2357794F00092C09 /* libprotoc.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8372357794E00092C09 /* libprotoc.dylib */; };
+		2ABCA8BF2357794F00092C09 /* libprotoc.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8372357794E00092C09 /* libprotoc.dylib */; };
+		2ABCA8C02357794F00092C09 /* libprotoc.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8372357794E00092C09 /* libprotoc.dylib */; };
+		2ABCA8C12357794F00092C09 /* libprotoc.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8372357794E00092C09 /* libprotoc.dylib */; };
+		2ABCA8C22357794F00092C09 /* libprotoc.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8372357794E00092C09 /* libprotoc.dylib */; };
+		2ABCA8C32357794F00092C09 /* libprotoc.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8372357794E00092C09 /* libprotoc.dylib */; };
+		2ABCA8C42357794F00092C09 /* libprotoc.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8372357794E00092C09 /* libprotoc.dylib */; };
+		2ABCA8C52357794F00092C09 /* libprotoc.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8372357794E00092C09 /* libprotoc.dylib */; };
+		2ABCA8C62357794F00092C09 /* libprotoc.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8372357794E00092C09 /* libprotoc.dylib */; };
+		2ABCA8C72357794F00092C09 /* libprotobuf.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8382357794E00092C09 /* libprotobuf.dylib */; };
+		2ABCA8C82357794F00092C09 /* libprotobuf.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8382357794E00092C09 /* libprotobuf.dylib */; };
+		2ABCA8C92357794F00092C09 /* libprotobuf.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8382357794E00092C09 /* libprotobuf.dylib */; };
+		2ABCA8CA2357794F00092C09 /* libprotobuf.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8382357794E00092C09 /* libprotobuf.dylib */; };
+		2ABCA8CB2357794F00092C09 /* libprotobuf.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8382357794E00092C09 /* libprotobuf.dylib */; };
+		2ABCA8CC2357794F00092C09 /* libprotobuf.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8382357794E00092C09 /* libprotobuf.dylib */; };
+		2ABCA8CD2357794F00092C09 /* libprotobuf.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8382357794E00092C09 /* libprotobuf.dylib */; };
+		2ABCA8CE2357794F00092C09 /* libprotobuf.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8382357794E00092C09 /* libprotobuf.dylib */; };
+		2ABCA8CF2357794F00092C09 /* libprotobuf.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8382357794E00092C09 /* libprotobuf.dylib */; };
+		2ABCA8D02357794F00092C09 /* libprotobuf.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8382357794E00092C09 /* libprotobuf.dylib */; };
+		2ABCA8D12357794F00092C09 /* libprotobuf.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8382357794E00092C09 /* libprotobuf.dylib */; };
+		2ABCA8D22357794F00092C09 /* libprotobuf.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8382357794E00092C09 /* libprotobuf.dylib */; };
+		2ABCA8D32357794F00092C09 /* libprotobuf.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8382357794E00092C09 /* libprotobuf.dylib */; };
+		2ABCA8D42357794F00092C09 /* libprotobuf.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8382357794E00092C09 /* libprotobuf.dylib */; };
+		2ABCA8D52357794F00092C09 /* libprotobuf.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8382357794E00092C09 /* libprotobuf.dylib */; };
+		2ABCA8D62357794F00092C09 /* libprotobuf.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8382357794E00092C09 /* libprotobuf.dylib */; };
+		2ABCA8D72357794F00092C09 /* libprotobuf-c.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8392357794E00092C09 /* libprotobuf-c.1.dylib */; };
+		2ABCA8D82357794F00092C09 /* libprotobuf-c.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8392357794E00092C09 /* libprotobuf-c.1.dylib */; };
+		2ABCA8D92357794F00092C09 /* libprotobuf-c.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8392357794E00092C09 /* libprotobuf-c.1.dylib */; };
+		2ABCA8DA2357794F00092C09 /* libprotobuf-c.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8392357794E00092C09 /* libprotobuf-c.1.dylib */; };
+		2ABCA8DB2357794F00092C09 /* libprotobuf-c.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8392357794E00092C09 /* libprotobuf-c.1.dylib */; };
+		2ABCA8DC2357794F00092C09 /* libprotobuf-c.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8392357794E00092C09 /* libprotobuf-c.1.dylib */; };
+		2ABCA8DD2357794F00092C09 /* libprotobuf-c.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8392357794E00092C09 /* libprotobuf-c.1.dylib */; };
+		2ABCA8DE2357794F00092C09 /* libprotobuf-c.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8392357794E00092C09 /* libprotobuf-c.1.dylib */; };
+		2ABCA8DF2357794F00092C09 /* libprotobuf-c.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8392357794E00092C09 /* libprotobuf-c.1.dylib */; };
+		2ABCA8E02357794F00092C09 /* libprotobuf-c.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8392357794E00092C09 /* libprotobuf-c.1.dylib */; };
+		2ABCA8E12357794F00092C09 /* libprotobuf-c.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8392357794E00092C09 /* libprotobuf-c.1.dylib */; };
+		2ABCA8E22357794F00092C09 /* libprotobuf-c.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8392357794E00092C09 /* libprotobuf-c.1.dylib */; };
+		2ABCA8E32357794F00092C09 /* libprotobuf-c.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8392357794E00092C09 /* libprotobuf-c.1.dylib */; };
+		2ABCA8E42357794F00092C09 /* libprotobuf-c.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8392357794E00092C09 /* libprotobuf-c.1.dylib */; };
+		2ABCA8E52357794F00092C09 /* libprotobuf-c.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8392357794E00092C09 /* libprotobuf-c.1.dylib */; };
+		2ABCA8E62357794F00092C09 /* libprotobuf-c.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA8392357794E00092C09 /* libprotobuf-c.1.dylib */; };
+		2ABCA8E72357794F00092C09 /* libprotobuf.18.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA83A2357794E00092C09 /* libprotobuf.18.dylib */; };
+		2ABCA8E82357794F00092C09 /* libprotobuf.18.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA83A2357794E00092C09 /* libprotobuf.18.dylib */; };
+		2ABCA8E92357794F00092C09 /* libprotobuf.18.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA83A2357794E00092C09 /* libprotobuf.18.dylib */; };
+		2ABCA8EA2357794F00092C09 /* libprotobuf.18.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA83A2357794E00092C09 /* libprotobuf.18.dylib */; };
+		2ABCA8EB2357794F00092C09 /* libprotobuf.18.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA83A2357794E00092C09 /* libprotobuf.18.dylib */; };
+		2ABCA8EC2357794F00092C09 /* libprotobuf.18.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA83A2357794E00092C09 /* libprotobuf.18.dylib */; };
+		2ABCA8ED2357794F00092C09 /* libprotobuf.18.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA83A2357794E00092C09 /* libprotobuf.18.dylib */; };
+		2ABCA8EE2357794F00092C09 /* libprotobuf.18.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA83A2357794E00092C09 /* libprotobuf.18.dylib */; };
+		2ABCA8EF2357794F00092C09 /* libprotobuf.18.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA83A2357794E00092C09 /* libprotobuf.18.dylib */; };
+		2ABCA8F02357794F00092C09 /* libprotobuf.18.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA83A2357794E00092C09 /* libprotobuf.18.dylib */; };
+		2ABCA8F12357794F00092C09 /* libprotobuf.18.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA83A2357794E00092C09 /* libprotobuf.18.dylib */; };
+		2ABCA8F22357794F00092C09 /* libprotobuf.18.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA83A2357794E00092C09 /* libprotobuf.18.dylib */; };
+		2ABCA8F32357794F00092C09 /* libprotobuf.18.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA83A2357794E00092C09 /* libprotobuf.18.dylib */; };
+		2ABCA8F42357794F00092C09 /* libprotobuf.18.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA83A2357794E00092C09 /* libprotobuf.18.dylib */; };
+		2ABCA8F52357794F00092C09 /* libprotobuf.18.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA83A2357794E00092C09 /* libprotobuf.18.dylib */; };
+		2ABCA8F62357794F00092C09 /* libprotobuf.18.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA83A2357794E00092C09 /* libprotobuf.18.dylib */; };
+		2ABCA8F72357794F00092C09 /* libprotoc.18.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA83B2357794E00092C09 /* libprotoc.18.dylib */; };
+		2ABCA8F82357794F00092C09 /* libprotoc.18.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA83B2357794E00092C09 /* libprotoc.18.dylib */; };
+		2ABCA8F92357794F00092C09 /* libprotoc.18.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA83B2357794E00092C09 /* libprotoc.18.dylib */; };
+		2ABCA8FA2357794F00092C09 /* libprotoc.18.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA83B2357794E00092C09 /* libprotoc.18.dylib */; };
+		2ABCA8FB2357794F00092C09 /* libprotoc.18.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA83B2357794E00092C09 /* libprotoc.18.dylib */; };
+		2ABCA8FC2357794F00092C09 /* libprotoc.18.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA83B2357794E00092C09 /* libprotoc.18.dylib */; };
+		2ABCA8FD2357794F00092C09 /* libprotoc.18.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA83B2357794E00092C09 /* libprotoc.18.dylib */; };
+		2ABCA8FE2357794F00092C09 /* libprotoc.18.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA83B2357794E00092C09 /* libprotoc.18.dylib */; };
+		2ABCA8FF2357794F00092C09 /* libprotoc.18.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA83B2357794E00092C09 /* libprotoc.18.dylib */; };
+		2ABCA9002357794F00092C09 /* libprotoc.18.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA83B2357794E00092C09 /* libprotoc.18.dylib */; };
+		2ABCA9012357794F00092C09 /* libprotoc.18.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA83B2357794E00092C09 /* libprotoc.18.dylib */; };
+		2ABCA9022357794F00092C09 /* libprotoc.18.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA83B2357794E00092C09 /* libprotoc.18.dylib */; };
+		2ABCA9032357794F00092C09 /* libprotoc.18.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA83B2357794E00092C09 /* libprotoc.18.dylib */; };
+		2ABCA9042357794F00092C09 /* libprotoc.18.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA83B2357794E00092C09 /* libprotoc.18.dylib */; };
+		2ABCA9052357794F00092C09 /* libprotoc.18.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA83B2357794E00092C09 /* libprotoc.18.dylib */; };
+		2ABCA9062357794F00092C09 /* libprotoc.18.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCA83B2357794E00092C09 /* libprotoc.18.dylib */; };
+		2ABCA9072357794F00092C09 /* protobuf-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 2ABCA83D2357794E00092C09 /* protobuf-c.c */; };
+		2ABCA9082357794F00092C09 /* protobuf-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 2ABCA83D2357794E00092C09 /* protobuf-c.c */; };
+		2ABCA9092357794F00092C09 /* protobuf-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 2ABCA83D2357794E00092C09 /* protobuf-c.c */; };
+		2ABCA90A2357794F00092C09 /* protobuf-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 2ABCA83D2357794E00092C09 /* protobuf-c.c */; };
+		2ABCA90B2357794F00092C09 /* protobuf-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 2ABCA83D2357794E00092C09 /* protobuf-c.c */; };
+		2ABCA90C2357794F00092C09 /* protobuf-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 2ABCA83D2357794E00092C09 /* protobuf-c.c */; };
+		2ABCA90D2357794F00092C09 /* protobuf-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 2ABCA83D2357794E00092C09 /* protobuf-c.c */; };
+		2ABCA90E2357794F00092C09 /* protobuf-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 2ABCA83D2357794E00092C09 /* protobuf-c.c */; };
+		2ABCA90F2357794F00092C09 /* protobuf-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 2ABCA83D2357794E00092C09 /* protobuf-c.c */; };
+		2ABCA9102357794F00092C09 /* protobuf-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 2ABCA83D2357794E00092C09 /* protobuf-c.c */; };
+		2ABCA9112357794F00092C09 /* protobuf-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 2ABCA83D2357794E00092C09 /* protobuf-c.c */; };
+		2ABCA9122357794F00092C09 /* protobuf-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 2ABCA83D2357794E00092C09 /* protobuf-c.c */; };
+		2ABCA9132357794F00092C09 /* protobuf-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 2ABCA83D2357794E00092C09 /* protobuf-c.c */; };
+		2ABCA9142357794F00092C09 /* protobuf-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 2ABCA83D2357794E00092C09 /* protobuf-c.c */; };
+		2ABCA9152357794F00092C09 /* protobuf-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 2ABCA83D2357794E00092C09 /* protobuf-c.c */; };
+		2ABCA9162357794F00092C09 /* protobuf-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 2ABCA83D2357794E00092C09 /* protobuf-c.c */; };
 		2D0E10461141F7DC00CE1BD6 /* PLCrashReportProcessInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D0E10441141F7DC00CE1BD6 /* PLCrashReportProcessInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2D0E10471141F7DC00CE1BD6 /* PLCrashReportProcessInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0E10451141F7DC00CE1BD6 /* PLCrashReportProcessInfo.m */; };
 		2D0E10481141F7DC00CE1BD6 /* PLCrashReportProcessInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D0E10441141F7DC00CE1BD6 /* PLCrashReportProcessInfo.h */; };
@@ -855,7 +1065,6 @@
 		F213F0602265B4FD005758A5 /* PLCrashAsyncTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 05CD36480EF247A9000FDE88 /* PLCrashAsyncTests.m */; };
 		F213F0612265B4FD005758A5 /* PLCrashLogWriterEncoding.c in Sources */ = {isa = PBXBuildFile; fileRef = 05CD36CD0EF25717000FDE88 /* PLCrashLogWriterEncoding.c */; };
 		F213F0622265B4FD005758A5 /* PLCrashReporterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F40ADD0EF73A39008050CF /* PLCrashReporterTests.m */; };
-		F213F0632265B4FD005758A5 /* protobuf-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 05F40F830EF850FC008050CF /* protobuf-c.c */; };
 		F213F0642265B4FD005758A5 /* PLCrashReportTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F411AC0EF8DE68008050CF /* PLCrashReportTests.m */; };
 		F213F0652265B4FD005758A5 /* PLCrashAsyncSignalInfo.c in Sources */ = {isa = PBXBuildFile; fileRef = 05E734310EFAC46D005EDFB7 /* PLCrashAsyncSignalInfo.c */; };
 		F213F0662265B4FD005758A5 /* PLCrashAsyncSignalInfoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 05E734830EFAD83B005EDFB7 /* PLCrashAsyncSignalInfoTests.m */; };
@@ -1024,7 +1233,6 @@
 		F2927053226231A600E1048A /* PLCrashReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F40ACA0EF7379F008050CF /* PLCrashReporter.m */; };
 		F2927054226231A600E1048A /* PLCrashReport.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F411A50EF8DA31008050CF /* PLCrashReport.m */; };
 		F2927055226231A600E1048A /* crash_report.proto in Sources */ = {isa = PBXBuildFile; fileRef = 059670C70EEFAC3A008A0601 /* crash_report.proto */; };
-		F2927056226231A600E1048A /* protobuf-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 05F40F830EF850FC008050CF /* protobuf-c.c */; };
 		F2927057226231A600E1048A /* PLCrashReportSystemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F413440EF995C0008050CF /* PLCrashReportSystemInfo.m */; };
 		F2927058226231A600E1048A /* PLCrashReportApplicationInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F4141D0EF9A6C4008050CF /* PLCrashReportApplicationInfo.m */; };
 		F2927059226231A600E1048A /* PLCrashReportThreadInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F414810EF9BFAC008050CF /* PLCrashReportThreadInfo.m */; };
@@ -1099,7 +1307,6 @@
 		F29270AF2262348F00E1048A /* PLCrashAsyncTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 05CD36480EF247A9000FDE88 /* PLCrashAsyncTests.m */; };
 		F29270B02262348F00E1048A /* PLCrashLogWriterEncoding.c in Sources */ = {isa = PBXBuildFile; fileRef = 05CD36CD0EF25717000FDE88 /* PLCrashLogWriterEncoding.c */; };
 		F29270B12262348F00E1048A /* PLCrashReporterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F40ADD0EF73A39008050CF /* PLCrashReporterTests.m */; };
-		F29270B22262348F00E1048A /* protobuf-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 05F40F830EF850FC008050CF /* protobuf-c.c */; };
 		F29270B32262348F00E1048A /* PLCrashReportTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F411AC0EF8DE68008050CF /* PLCrashReportTests.m */; };
 		F29270B42262348F00E1048A /* PLCrashAsyncSignalInfo.c in Sources */ = {isa = PBXBuildFile; fileRef = 05E734310EFAC46D005EDFB7 /* PLCrashAsyncSignalInfo.c */; };
 		F29270B52262348F00E1048A /* PLCrashAsyncSignalInfoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 05E734830EFAD83B005EDFB7 /* PLCrashAsyncSignalInfoTests.m */; };
@@ -1260,7 +1467,6 @@
 		F2F046B2226239F900FA7A3F /* PLCrashReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F40ACA0EF7379F008050CF /* PLCrashReporter.m */; };
 		F2F046B3226239F900FA7A3F /* PLCrashReport.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F411A50EF8DA31008050CF /* PLCrashReport.m */; };
 		F2F046B4226239F900FA7A3F /* crash_report.proto in Sources */ = {isa = PBXBuildFile; fileRef = 059670C70EEFAC3A008A0601 /* crash_report.proto */; };
-		F2F046B5226239F900FA7A3F /* protobuf-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 05F40F830EF850FC008050CF /* protobuf-c.c */; };
 		F2F046B6226239F900FA7A3F /* PLCrashReportSystemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F413440EF995C0008050CF /* PLCrashReportSystemInfo.m */; };
 		F2F046B7226239F900FA7A3F /* PLCrashReportApplicationInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F4141D0EF9A6C4008050CF /* PLCrashReportApplicationInfo.m */; };
 		F2F046B8226239F900FA7A3F /* PLCrashReportThreadInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F414810EF9BFAC008050CF /* PLCrashReportThreadInfo.m */; };
@@ -1334,6 +1540,8 @@
 			compilerSpec = com.apple.compilers.proxy.script;
 			filePatterns = "*.proto";
 			fileType = pattern.proxy;
+			inputFiles = (
+			);
 			isEditable = 1;
 			outputFiles = (
 				"${DERIVED_FILES_DIR}/${CURRENT_ARCH}/${INPUT_FILE_BASE}.pb-c.c",
@@ -1346,6 +1554,8 @@
 			compilerSpec = com.apple.compilers.proxy.script;
 			filePatterns = "*.proto";
 			fileType = pattern.proxy;
+			inputFiles = (
+			);
 			isEditable = 1;
 			outputFiles = (
 				"${DERIVED_FILES_DIR}/${CURRENT_ARCH}/${INPUT_FILE_BASE}.pb-c.c",
@@ -1358,6 +1568,8 @@
 			compilerSpec = com.apple.compilers.proxy.script;
 			filePatterns = "*.proto";
 			fileType = pattern.proxy;
+			inputFiles = (
+			);
 			isEditable = 1;
 			outputFiles = (
 				"${DERIVED_FILES_DIR}/${CURRENT_ARCH}/${INPUT_FILE_BASE}.pb-c.c",
@@ -1370,6 +1582,8 @@
 			compilerSpec = com.apple.compilers.proxy.script;
 			filePatterns = "*.proto";
 			fileType = pattern.proxy;
+			inputFiles = (
+			);
 			isEditable = 1;
 			outputFiles = (
 				"${DERIVED_FILES_DIR}/${CURRENT_ARCH}/$(INPUT_FILE_BASE).pb-c.c",
@@ -1382,6 +1596,8 @@
 			compilerSpec = com.apple.compilers.proxy.script;
 			filePatterns = "*.proto";
 			fileType = pattern.proxy;
+			inputFiles = (
+			);
 			isEditable = 1;
 			outputFiles = (
 				"${DERIVED_FILES_DIR}/${CURRENT_ARCH}/$(INPUT_FILE_BASE).pb-c.c",
@@ -1394,6 +1610,8 @@
 			compilerSpec = com.apple.compilers.proxy.script;
 			filePatterns = "*.proto";
 			fileType = pattern.proxy;
+			inputFiles = (
+			);
 			isEditable = 1;
 			outputFiles = (
 				"${DERIVED_FILES_DIR}/${CURRENT_ARCH}/$(INPUT_FILE_BASE).pb-c.c",
@@ -1406,6 +1624,8 @@
 			compilerSpec = com.apple.compilers.proxy.script;
 			filePatterns = "*.proto";
 			fileType = pattern.proxy;
+			inputFiles = (
+			);
 			isEditable = 1;
 			outputFiles = (
 				"${DERIVED_FILES_DIR}/${CURRENT_ARCH}/$(INPUT_FILE_BASE).pb-c.c",
@@ -1418,6 +1638,8 @@
 			compilerSpec = com.apple.compilers.proxy.script;
 			filePatterns = "*.proto";
 			fileType = pattern.proxy;
+			inputFiles = (
+			);
 			isEditable = 1;
 			outputFiles = (
 				"${DERIVED_FILES_DIR}/${CURRENT_ARCH}/${INPUT_FILE_BASE}.pb-c.c",
@@ -1430,6 +1652,8 @@
 			compilerSpec = com.apple.compilers.proxy.script;
 			filePatterns = "*.proto";
 			fileType = pattern.proxy;
+			inputFiles = (
+			);
 			isEditable = 1;
 			outputFiles = (
 				"${DERIVED_FILES_DIR}/${CURRENT_ARCH}/$(INPUT_FILE_BASE).pb-c.c",
@@ -1442,6 +1666,8 @@
 			compilerSpec = com.apple.compilers.proxy.script;
 			filePatterns = "*.proto";
 			fileType = pattern.proxy;
+			inputFiles = (
+			);
 			isEditable = 1;
 			outputFiles = (
 				"${DERIVED_FILES_DIR}/${CURRENT_ARCH}/${INPUT_FILE_BASE}.pb-c.c",
@@ -1454,6 +1680,8 @@
 			compilerSpec = com.apple.compilers.proxy.script;
 			filePatterns = "*.proto";
 			fileType = pattern.proxy;
+			inputFiles = (
+			);
 			isEditable = 1;
 			outputFiles = (
 				"${DERIVED_FILES_DIR}/${CURRENT_ARCH}/$(INPUT_FILE_BASE).pb-c.c",
@@ -1708,7 +1936,6 @@
 		059670260EEF6B1A008A0601 /* PLCrashLogWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLCrashLogWriter.m; sourceTree = "<group>"; };
 		0596702D0EEF6B51008A0601 /* PLCrashLogWriterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLCrashLogWriterTests.m; sourceTree = "<group>"; };
 		059670C70EEFAC3A008A0601 /* crash_report.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = crash_report.proto; sourceTree = "<group>"; };
-		059671140EEFADA6008A0601 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		059672F00EF08564008A0601 /* PLCrashAsync.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCrashAsync.h; sourceTree = "<group>"; };
 		05A17DC416D7F81600888448 /* PLCrashAsyncThread.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = PLCrashAsyncThread.c; sourceTree = "<group>"; };
 		05A17DCC16D7F82700888448 /* PLCrashAsyncThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCrashAsyncThread.h; sourceTree = "<group>"; };
@@ -1835,10 +2062,6 @@
 		05F40CE70EF7AB80008050CF /* DemoCrash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoCrash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05F40CE90EF7AB80008050CF /* DemoCrash-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DemoCrash-Info.plist"; sourceTree = "<group>"; };
 		05F40CF10EF7AC0E008050CF /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		05F40F7D0EF85099008050CF /* protoc-c */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = "protoc-c"; sourceTree = "<group>"; };
-		05F40F830EF850FC008050CF /* protobuf-c.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "protobuf-c.c"; sourceTree = "<group>"; };
-		05F40F870EF85109008050CF /* protobuf-c-private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "protobuf-c-private.h"; sourceTree = "<group>"; };
-		05F40F880EF85109008050CF /* protobuf-c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "protobuf-c.h"; sourceTree = "<group>"; };
 		05F411A40EF8DA31008050CF /* PLCrashReport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCrashReport.h; sourceTree = "<group>"; };
 		05F411A50EF8DA31008050CF /* PLCrashReport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLCrashReport.m; sourceTree = "<group>"; };
 		05F411AC0EF8DE68008050CF /* PLCrashReportTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLCrashReportTests.m; sourceTree = "<group>"; };
@@ -1857,6 +2080,23 @@
 		05F76DD9162F238E00A668C7 /* PLCrashAsyncMachOImageTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLCrashAsyncMachOImageTests.m; sourceTree = "<group>"; };
 		05FDFC83168950F600463E43 /* PLCrashMachExceptionServerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLCrashMachExceptionServerTests.m; sourceTree = "<group>"; };
 		0867D69BFE84028FC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		2ABCA8252357794E00092C09 /* INSTALL_RECEIPT.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = INSTALL_RECEIPT.json; sourceTree = "<group>"; };
+		2ABCA8262357794E00092C09 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		2ABCA8282357794E00092C09 /* protoc-c */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = "protoc-c"; sourceTree = "<group>"; };
+		2ABCA8292357794E00092C09 /* ChangeLog */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ChangeLog; sourceTree = "<group>"; };
+		2ABCA82D2357794E00092C09 /* protobuf-c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "protobuf-c.h"; sourceTree = "<group>"; };
+		2ABCA82F2357794E00092C09 /* protobuf-c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "protobuf-c.h"; sourceTree = "<group>"; };
+		2ABCA8302357794E00092C09 /* TODO */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TODO; sourceTree = "<group>"; };
+		2ABCA8312357794E00092C09 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		2ABCA8332357794E00092C09 /* libprotobuf-c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libprotobuf-c.a"; sourceTree = "<group>"; };
+		2ABCA8352357794E00092C09 /* libprotobuf-c.pc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "libprotobuf-c.pc"; sourceTree = "<group>"; };
+		2ABCA8362357794E00092C09 /* libprotobuf-c.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libprotobuf-c.dylib"; sourceTree = "<group>"; };
+		2ABCA8372357794E00092C09 /* libprotoc.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libprotoc.dylib; sourceTree = "<group>"; };
+		2ABCA8382357794E00092C09 /* libprotobuf.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libprotobuf.dylib; sourceTree = "<group>"; };
+		2ABCA8392357794E00092C09 /* libprotobuf-c.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libprotobuf-c.1.dylib"; sourceTree = "<group>"; };
+		2ABCA83A2357794E00092C09 /* libprotobuf.18.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libprotobuf.18.dylib; sourceTree = "<group>"; };
+		2ABCA83B2357794E00092C09 /* libprotoc.18.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libprotoc.18.dylib; sourceTree = "<group>"; };
+		2ABCA83D2357794E00092C09 /* protobuf-c.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "protobuf-c.c"; sourceTree = "<group>"; };
 		2D0E10441141F7DC00CE1BD6 /* PLCrashReportProcessInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCrashReportProcessInfo.h; sourceTree = "<group>"; };
 		2D0E10451141F7DC00CE1BD6 /* PLCrashReportProcessInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLCrashReportProcessInfo.m; sourceTree = "<group>"; };
 		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -1886,7 +2126,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ABCA89B2357794E00092C09 /* libprotobuf-c.a in Frameworks */,
+				2ABCA9062357794F00092C09 /* libprotoc.18.dylib in Frameworks */,
 				050DE25E0F61B93900152ED3 /* libCrashReporter-MacOSX-Static.a in Frameworks */,
+				2ABCA8B62357794E00092C09 /* libprotobuf-c.dylib in Frameworks */,
+				2ABCA8C62357794F00092C09 /* libprotoc.dylib in Frameworks */,
+				2ABCA8E62357794F00092C09 /* libprotobuf-c.1.dylib in Frameworks */,
+				2ABCA8F62357794F00092C09 /* libprotobuf.18.dylib in Frameworks */,
+				2ABCA8D62357794F00092C09 /* libprotobuf.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1894,6 +2141,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ABCA8992357794E00092C09 /* libprotobuf-c.a in Frameworks */,
+				2ABCA8E42357794F00092C09 /* libprotobuf-c.1.dylib in Frameworks */,
+				2ABCA9042357794F00092C09 /* libprotoc.18.dylib in Frameworks */,
+				2ABCA8B42357794E00092C09 /* libprotobuf-c.dylib in Frameworks */,
+				2ABCA8C42357794F00092C09 /* libprotoc.dylib in Frameworks */,
+				2ABCA8D42357794F00092C09 /* libprotobuf.dylib in Frameworks */,
+				2ABCA8F42357794F00092C09 /* libprotobuf.18.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1901,6 +2155,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ABCA89A2357794E00092C09 /* libprotobuf-c.a in Frameworks */,
+				2ABCA8E52357794F00092C09 /* libprotobuf-c.1.dylib in Frameworks */,
+				2ABCA9052357794F00092C09 /* libprotoc.18.dylib in Frameworks */,
+				2ABCA8B52357794E00092C09 /* libprotobuf-c.dylib in Frameworks */,
+				2ABCA8C52357794F00092C09 /* libprotoc.dylib in Frameworks */,
+				2ABCA8D52357794F00092C09 /* libprotobuf.dylib in Frameworks */,
+				2ABCA8F52357794F00092C09 /* libprotobuf.18.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1908,6 +2169,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ABCA8932357794E00092C09 /* libprotobuf-c.a in Frameworks */,
+				2ABCA8DE2357794F00092C09 /* libprotobuf-c.1.dylib in Frameworks */,
+				2ABCA8FE2357794F00092C09 /* libprotoc.18.dylib in Frameworks */,
+				2ABCA8AE2357794E00092C09 /* libprotobuf-c.dylib in Frameworks */,
+				2ABCA8BE2357794F00092C09 /* libprotoc.dylib in Frameworks */,
+				2ABCA8CE2357794F00092C09 /* libprotobuf.dylib in Frameworks */,
+				2ABCA8EE2357794F00092C09 /* libprotobuf.18.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1915,6 +2183,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ABCA8942357794E00092C09 /* libprotobuf-c.a in Frameworks */,
+				2ABCA8DF2357794F00092C09 /* libprotobuf-c.1.dylib in Frameworks */,
+				2ABCA8FF2357794F00092C09 /* libprotoc.18.dylib in Frameworks */,
+				2ABCA8AF2357794E00092C09 /* libprotobuf-c.dylib in Frameworks */,
+				2ABCA8BF2357794F00092C09 /* libprotoc.dylib in Frameworks */,
+				2ABCA8CF2357794F00092C09 /* libprotobuf.dylib in Frameworks */,
+				2ABCA8EF2357794F00092C09 /* libprotobuf.18.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1922,7 +2197,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ABCA88F2357794E00092C09 /* libprotobuf-c.a in Frameworks */,
+				2ABCA8DA2357794F00092C09 /* libprotobuf-c.1.dylib in Frameworks */,
+				2ABCA8BA2357794F00092C09 /* libprotoc.dylib in Frameworks */,
+				2ABCA8AA2357794E00092C09 /* libprotobuf-c.dylib in Frameworks */,
+				2ABCA8CA2357794F00092C09 /* libprotobuf.dylib in Frameworks */,
+				2ABCA8EA2357794F00092C09 /* libprotobuf.18.dylib in Frameworks */,
 				05CD34380EEA60BB000FDE88 /* CrashReporter.framework in Frameworks */,
+				2ABCA8FA2357794F00092C09 /* libprotoc.18.dylib in Frameworks */,
 				05654F790EFA5B54004283F5 /* CoreServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1931,6 +2213,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ABCA8962357794E00092C09 /* libprotobuf-c.a in Frameworks */,
+				2ABCA8E12357794F00092C09 /* libprotobuf-c.1.dylib in Frameworks */,
+				2ABCA9012357794F00092C09 /* libprotoc.18.dylib in Frameworks */,
+				2ABCA8B12357794E00092C09 /* libprotobuf-c.dylib in Frameworks */,
+				2ABCA8C12357794F00092C09 /* libprotoc.dylib in Frameworks */,
+				2ABCA8D12357794F00092C09 /* libprotobuf.dylib in Frameworks */,
+				2ABCA8F12357794F00092C09 /* libprotobuf.18.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1938,6 +2227,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ABCA8972357794E00092C09 /* libprotobuf-c.a in Frameworks */,
+				2ABCA8E22357794F00092C09 /* libprotobuf-c.1.dylib in Frameworks */,
+				2ABCA9022357794F00092C09 /* libprotoc.18.dylib in Frameworks */,
+				2ABCA8B22357794E00092C09 /* libprotobuf-c.dylib in Frameworks */,
+				2ABCA8C22357794F00092C09 /* libprotoc.dylib in Frameworks */,
+				2ABCA8D22357794F00092C09 /* libprotobuf.dylib in Frameworks */,
+				2ABCA8F22357794F00092C09 /* libprotobuf.18.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1945,7 +2241,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ABCA8952357794E00092C09 /* libprotobuf-c.a in Frameworks */,
+				2ABCA8E02357794F00092C09 /* libprotobuf-c.1.dylib in Frameworks */,
+				2ABCA8C02357794F00092C09 /* libprotoc.dylib in Frameworks */,
+				2ABCA8B02357794E00092C09 /* libprotobuf-c.dylib in Frameworks */,
+				2ABCA8D02357794F00092C09 /* libprotobuf.dylib in Frameworks */,
+				2ABCA8F02357794F00092C09 /* libprotobuf.18.dylib in Frameworks */,
 				05E732140EFA1BAE005EDFB7 /* libCrashReporter-MacOSX-Static.a in Frameworks */,
+				2ABCA9002357794F00092C09 /* libprotoc.18.dylib in Frameworks */,
 				05654F780EFA5B54004283F5 /* CoreServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1954,6 +2257,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ABCA8922357794E00092C09 /* libprotobuf-c.a in Frameworks */,
+				2ABCA8DD2357794F00092C09 /* libprotobuf-c.1.dylib in Frameworks */,
+				2ABCA8FD2357794F00092C09 /* libprotoc.18.dylib in Frameworks */,
+				2ABCA8AD2357794E00092C09 /* libprotobuf-c.dylib in Frameworks */,
+				2ABCA8BD2357794F00092C09 /* libprotoc.dylib in Frameworks */,
+				2ABCA8CD2357794F00092C09 /* libprotobuf.dylib in Frameworks */,
+				2ABCA8ED2357794F00092C09 /* libprotobuf.18.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1961,7 +2271,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ABCA8982357794E00092C09 /* libprotobuf-c.a in Frameworks */,
+				2ABCA9032357794F00092C09 /* libprotoc.18.dylib in Frameworks */,
 				05F40CF50EF7AC82008050CF /* CrashReporter.framework in Frameworks */,
+				2ABCA8B32357794E00092C09 /* libprotobuf-c.dylib in Frameworks */,
+				2ABCA8C32357794F00092C09 /* libprotoc.dylib in Frameworks */,
+				2ABCA8E32357794F00092C09 /* libprotobuf-c.1.dylib in Frameworks */,
+				2ABCA8F32357794F00092C09 /* libprotobuf.18.dylib in Frameworks */,
+				2ABCA8D32357794F00092C09 /* libprotobuf.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1969,7 +2286,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ABCA88C2357794E00092C09 /* libprotobuf-c.a in Frameworks */,
+				2ABCA8D72357794F00092C09 /* libprotobuf-c.1.dylib in Frameworks */,
+				2ABCA8B72357794E00092C09 /* libprotoc.dylib in Frameworks */,
+				2ABCA8A72357794E00092C09 /* libprotobuf-c.dylib in Frameworks */,
+				2ABCA8C72357794F00092C09 /* libprotobuf.dylib in Frameworks */,
+				2ABCA8E72357794F00092C09 /* libprotobuf.18.dylib in Frameworks */,
 				05CD32110EE93AF9000FDE88 /* Foundation.framework in Frameworks */,
+				2ABCA8F72357794F00092C09 /* libprotoc.18.dylib in Frameworks */,
 				05654F770EFA5B54004283F5 /* CoreServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1978,7 +2302,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ABCA8912357794E00092C09 /* libprotobuf-c.a in Frameworks */,
+				2ABCA8FC2357794F00092C09 /* libprotoc.18.dylib in Frameworks */,
 				F213F0D52265BD14005758A5 /* CrashReporter.framework in Frameworks */,
+				2ABCA8AC2357794E00092C09 /* libprotobuf-c.dylib in Frameworks */,
+				2ABCA8BC2357794F00092C09 /* libprotoc.dylib in Frameworks */,
+				2ABCA8DC2357794F00092C09 /* libprotobuf-c.1.dylib in Frameworks */,
+				2ABCA8EC2357794F00092C09 /* libprotobuf.18.dylib in Frameworks */,
+				2ABCA8CC2357794F00092C09 /* libprotobuf.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1986,7 +2317,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ABCA88E2357794E00092C09 /* libprotobuf-c.a in Frameworks */,
+				2ABCA8D92357794F00092C09 /* libprotobuf-c.1.dylib in Frameworks */,
+				2ABCA8B92357794F00092C09 /* libprotoc.dylib in Frameworks */,
+				2ABCA8A92357794E00092C09 /* libprotobuf-c.dylib in Frameworks */,
+				2ABCA8C92357794F00092C09 /* libprotobuf.dylib in Frameworks */,
+				2ABCA8E92357794F00092C09 /* libprotobuf.18.dylib in Frameworks */,
 				F29270992262332200E1048A /* MobileCoreServices.framework in Frameworks */,
+				2ABCA8F92357794F00092C09 /* libprotoc.18.dylib in Frameworks */,
 				F2927090226231A600E1048A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1995,7 +2333,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ABCA8902357794E00092C09 /* libprotobuf-c.a in Frameworks */,
+				2ABCA8FB2357794F00092C09 /* libprotoc.18.dylib in Frameworks */,
 				F213F0D62265BD3B005758A5 /* CrashReporter.framework in Frameworks */,
+				2ABCA8AB2357794E00092C09 /* libprotobuf-c.dylib in Frameworks */,
+				2ABCA8BB2357794F00092C09 /* libprotoc.dylib in Frameworks */,
+				2ABCA8DB2357794F00092C09 /* libprotobuf-c.1.dylib in Frameworks */,
+				2ABCA8EB2357794F00092C09 /* libprotobuf.18.dylib in Frameworks */,
+				2ABCA8CB2357794F00092C09 /* libprotobuf.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2003,7 +2348,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ABCA88D2357794E00092C09 /* libprotobuf-c.a in Frameworks */,
+				2ABCA8D82357794F00092C09 /* libprotobuf-c.1.dylib in Frameworks */,
+				2ABCA8B82357794F00092C09 /* libprotoc.dylib in Frameworks */,
+				2ABCA8A82357794E00092C09 /* libprotobuf-c.dylib in Frameworks */,
+				2ABCA8C82357794F00092C09 /* libprotobuf.dylib in Frameworks */,
+				2ABCA8E82357794F00092C09 /* libprotobuf.18.dylib in Frameworks */,
 				F2F046EE226239F900FA7A3F /* MobileCoreServices.framework in Frameworks */,
+				2ABCA8F82357794F00092C09 /* libprotoc.18.dylib in Frameworks */,
 				F2F046EF226239F900FA7A3F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2201,44 +2553,10 @@
 		059670E30EEFADA6008A0601 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
+				2ABCA8242357794E00092C09 /* protobuf-c-1.3.2 */,
 				05D0AE291B45EE0900296632 /* Catch */,
-				059670E40EEFADA6008A0601 /* protobuf-2.0.3 */,
 			);
 			path = Dependencies;
-			sourceTree = "<group>";
-		};
-		059670E40EEFADA6008A0601 /* protobuf-2.0.3 */ = {
-			isa = PBXGroup;
-			children = (
-				059670E50EEFADA6008A0601 /* bin */,
-				059670E70EEFADA6008A0601 /* include */,
-				05F40F7C0EF8503D008050CF /* src */,
-				059671140EEFADA6008A0601 /* README.txt */,
-			);
-			path = "protobuf-2.0.3";
-			sourceTree = "<group>";
-		};
-		059670E50EEFADA6008A0601 /* bin */ = {
-			isa = PBXGroup;
-			children = (
-				05F40F7D0EF85099008050CF /* protoc-c */,
-			);
-			path = bin;
-			sourceTree = "<group>";
-		};
-		059670E70EEFADA6008A0601 /* include */ = {
-			isa = PBXGroup;
-			children = (
-				059670E80EEFADA6008A0601 /* google */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
-		059670E80EEFADA6008A0601 /* google */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = google;
 			sourceTree = "<group>";
 		};
 		059672EF0EF0853A008A0601 /* Private API */ = {
@@ -2644,16 +2962,6 @@
 			path = "Crash Demo";
 			sourceTree = "<group>";
 		};
-		05F40F7C0EF8503D008050CF /* src */ = {
-			isa = PBXGroup;
-			children = (
-				05F40F870EF85109008050CF /* protobuf-c-private.h */,
-				05F40F880EF85109008050CF /* protobuf-c.h */,
-				05F40F830EF850FC008050CF /* protobuf-c.c */,
-			);
-			path = src;
-			sourceTree = "<group>";
-		};
 		05F414280EF9BB19008050CF /* Crash Report */ = {
 			isa = PBXGroup;
 			children = (
@@ -2762,6 +3070,94 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
+		2ABCA8242357794E00092C09 /* protobuf-c-1.3.2 */ = {
+			isa = PBXGroup;
+			children = (
+				2ABCA8252357794E00092C09 /* INSTALL_RECEIPT.json */,
+				2ABCA8262357794E00092C09 /* LICENSE */,
+				2ABCA8272357794E00092C09 /* bin */,
+				2ABCA8292357794E00092C09 /* ChangeLog */,
+				2ABCA82A2357794E00092C09 /* include */,
+				2ABCA8302357794E00092C09 /* TODO */,
+				2ABCA8312357794E00092C09 /* README.md */,
+				2ABCA8322357794E00092C09 /* lib */,
+				2ABCA83C2357794E00092C09 /* src */,
+			);
+			path = "protobuf-c-1.3.2";
+			sourceTree = "<group>";
+		};
+		2ABCA8272357794E00092C09 /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				2ABCA8282357794E00092C09 /* protoc-c */,
+			);
+			path = bin;
+			sourceTree = "<group>";
+		};
+		2ABCA82A2357794E00092C09 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				2ABCA82B2357794E00092C09 /* google */,
+				2ABCA82E2357794E00092C09 /* protobuf-c */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		2ABCA82B2357794E00092C09 /* google */ = {
+			isa = PBXGroup;
+			children = (
+				2ABCA82C2357794E00092C09 /* protobuf-c */,
+			);
+			path = google;
+			sourceTree = "<group>";
+		};
+		2ABCA82C2357794E00092C09 /* protobuf-c */ = {
+			isa = PBXGroup;
+			children = (
+				2ABCA82D2357794E00092C09 /* protobuf-c.h */,
+			);
+			path = "protobuf-c";
+			sourceTree = "<group>";
+		};
+		2ABCA82E2357794E00092C09 /* protobuf-c */ = {
+			isa = PBXGroup;
+			children = (
+				2ABCA82F2357794E00092C09 /* protobuf-c.h */,
+			);
+			path = "protobuf-c";
+			sourceTree = "<group>";
+		};
+		2ABCA8322357794E00092C09 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				2ABCA8332357794E00092C09 /* libprotobuf-c.a */,
+				2ABCA8342357794E00092C09 /* pkgconfig */,
+				2ABCA8362357794E00092C09 /* libprotobuf-c.dylib */,
+				2ABCA8372357794E00092C09 /* libprotoc.dylib */,
+				2ABCA8382357794E00092C09 /* libprotobuf.dylib */,
+				2ABCA8392357794E00092C09 /* libprotobuf-c.1.dylib */,
+				2ABCA83A2357794E00092C09 /* libprotobuf.18.dylib */,
+				2ABCA83B2357794E00092C09 /* libprotoc.18.dylib */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		2ABCA8342357794E00092C09 /* pkgconfig */ = {
+			isa = PBXGroup;
+			children = (
+				2ABCA8352357794E00092C09 /* libprotobuf-c.pc */,
+			);
+			path = pkgconfig;
+			sourceTree = "<group>";
+		};
+		2ABCA83C2357794E00092C09 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				2ABCA83D2357794E00092C09 /* protobuf-c.c */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
 		32C88DFF0371C24200C91783 /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
@@ -2808,6 +3204,7 @@
 				0576DA911B3DC81B000BCA73 /* AsyncPageAllocator.hpp in Headers */,
 				0576DB011B430285000BCA73 /* PLCrashAsyncDynamicLoader.h in Headers */,
 				05F413470EF995C0008050CF /* PLCrashReportSystemInfo.h in Headers */,
+				2ABCA86E2357794E00092C09 /* protobuf-c.h in Headers */,
 				05F414220EF9A6C4008050CF /* PLCrashReportApplicationInfo.h in Headers */,
 				05F414860EF9BFAC008050CF /* PLCrashReportThreadInfo.h in Headers */,
 				05F415110EF9DD9B008050CF /* PLCrashReportBinaryImageInfo.h in Headers */,
@@ -2840,6 +3237,7 @@
 				0576DAC71B41E227000BCA73 /* DynamicLoader.hpp in Headers */,
 				05102E1717B0151000B5D925 /* PLCrashProcessInfo.h in Headers */,
 				0576DAA91B3E0856000BCA73 /* AsyncAllocatable.hpp in Headers */,
+				2ABCA8742357794E00092C09 /* protobuf-c.h in Headers */,
 				05102E2617B2B80A00B5D925 /* PLCrashHostInfo.h in Headers */,
 				051F067C17B6B0D4006D0EFA /* PLCrashMachExceptionPort.h in Headers */,
 				05BEC41917BAF92A0082CBFB /* PLCrashMachExceptionPortSet.h in Headers */,
@@ -2867,6 +3265,7 @@
 				0576DA921B3DC81B000BCA73 /* AsyncPageAllocator.hpp in Headers */,
 				0576DB021B430285000BCA73 /* PLCrashAsyncDynamicLoader.h in Headers */,
 				05F413450EF995C0008050CF /* PLCrashReportSystemInfo.h in Headers */,
+				2ABCA86F2357794E00092C09 /* protobuf-c.h in Headers */,
 				05F4141E0EF9A6C4008050CF /* PLCrashReportApplicationInfo.h in Headers */,
 				05F414820EF9BFAC008050CF /* PLCrashReportThreadInfo.h in Headers */,
 				05F4150D0EF9DD9B008050CF /* PLCrashReportBinaryImageInfo.h in Headers */,
@@ -2899,6 +3298,7 @@
 				0576DAC81B41E227000BCA73 /* DynamicLoader.hpp in Headers */,
 				05102E1817B0151000B5D925 /* PLCrashProcessInfo.h in Headers */,
 				0576DAAA1B3E0856000BCA73 /* AsyncAllocatable.hpp in Headers */,
+				2ABCA8752357794E00092C09 /* protobuf-c.h in Headers */,
 				05102E2717B2B80A00B5D925 /* PLCrashHostInfo.h in Headers */,
 				051F067D17B6B0D4006D0EFA /* PLCrashMachExceptionPort.h in Headers */,
 				05BEC41A17BAF92A0082CBFB /* PLCrashMachExceptionPortSet.h in Headers */,
@@ -2917,6 +3317,7 @@
 				05E734380EFAC46D005EDFB7 /* PLCrashAsyncSignalInfo.h in Headers */,
 				05E734FD0EFAE59C005EDFB7 /* PLCrashReportSignalInfo.h in Headers */,
 				2D0E10481141F7DC00CE1BD6 /* PLCrashReportProcessInfo.h in Headers */,
+				2ABCA86D2357794E00092C09 /* protobuf-c.h in Headers */,
 				0576DAC51B41E227000BCA73 /* DynamicLoader.hpp in Headers */,
 				0576DA7E1B3DC210000BCA73 /* SpinLock.hpp in Headers */,
 				054627B111D998BB007891C7 /* PLCrashReportTextFormatter.h in Headers */,
@@ -2928,6 +3329,7 @@
 				05D9E5451676598200B39833 /* PLCrashReportStackFrameInfo.h in Headers */,
 				05D9E55016765A0200B39833 /* PLCrashReportRegisterInfo.h in Headers */,
 				0576DAA71B3E0856000BCA73 /* AsyncAllocatable.hpp in Headers */,
+				2ABCA8732357794E00092C09 /* protobuf-c.h in Headers */,
 				05D9E55B16765D0200B39833 /* PLCrashReportSymbolInfo.h in Headers */,
 				0573B42C1681098E00395F2A /* PLCrashMachExceptionServer.h in Headers */,
 				FCE45B4FD545A258E0292F25 /* PLCrashFrameStackUnwind.h in Headers */,
@@ -2967,6 +3369,7 @@
 				05F414200EF9A6C4008050CF /* PLCrashReportApplicationInfo.h in Headers */,
 				05C5881D178B898C00BA118D /* PLCrashReportStackFrameInfo.h in Headers */,
 				05C5881E178B89A300BA118D /* PLCrashReportSymbolInfo.h in Headers */,
+				2ABCA86A2357794E00092C09 /* protobuf-c.h in Headers */,
 				05F414840EF9BFAC008050CF /* PLCrashReportThreadInfo.h in Headers */,
 				05C5881F178B89A800BA118D /* PLCrashReportRegisterInfo.h in Headers */,
 				05F4150F0EF9DD9B008050CF /* PLCrashReportBinaryImageInfo.h in Headers */,
@@ -3007,6 +3410,7 @@
 				05E748AF17616D30009B8745 /* dwarf_stack.hpp in Headers */,
 				05C76DAE176B8C7000E9B10D /* dwarf_opstream.hpp in Headers */,
 				05C76DD0176FBAF300E9B10D /* PLCrashAsyncDwarfCFAState.hpp in Headers */,
+				2ABCA8702357794E00092C09 /* protobuf-c.h in Headers */,
 				05920D26177B9257001E8975 /* PLCrashFrameDWARFUnwind.h in Headers */,
 				05102E1617B0151000B5D925 /* PLCrashProcessInfo.h in Headers */,
 				0576DAB61B41CCE0000BCA73 /* PLCrashAsyncAllocator.h in Headers */,
@@ -3039,6 +3443,7 @@
 				F2927016226231A600E1048A /* PLCrashReportApplicationInfo.h in Headers */,
 				F2927017226231A600E1048A /* PLCrashReportStackFrameInfo.h in Headers */,
 				F2927018226231A600E1048A /* PLCrashReportSymbolInfo.h in Headers */,
+				2ABCA86C2357794E00092C09 /* protobuf-c.h in Headers */,
 				F2927019226231A600E1048A /* PLCrashReportThreadInfo.h in Headers */,
 				F292701A226231A600E1048A /* PLCrashReportRegisterInfo.h in Headers */,
 				F292701B226231A600E1048A /* PLCrashReportBinaryImageInfo.h in Headers */,
@@ -3079,6 +3484,7 @@
 				F292703E226231A600E1048A /* dwarf_stack.hpp in Headers */,
 				F292703F226231A600E1048A /* dwarf_opstream.hpp in Headers */,
 				F2927040226231A600E1048A /* PLCrashAsyncDwarfCFAState.hpp in Headers */,
+				2ABCA8722357794E00092C09 /* protobuf-c.h in Headers */,
 				F2927041226231A600E1048A /* PLCrashFrameDWARFUnwind.h in Headers */,
 				F2927042226231A600E1048A /* PLCrashProcessInfo.h in Headers */,
 				F2927043226231A600E1048A /* PLCrashAsyncAllocator.h in Headers */,
@@ -3111,6 +3517,7 @@
 				F2F04675226239F900FA7A3F /* PLCrashReportApplicationInfo.h in Headers */,
 				F2F04676226239F900FA7A3F /* PLCrashReportStackFrameInfo.h in Headers */,
 				F2F04677226239F900FA7A3F /* PLCrashReportSymbolInfo.h in Headers */,
+				2ABCA86B2357794E00092C09 /* protobuf-c.h in Headers */,
 				F2F04678226239F900FA7A3F /* PLCrashReportThreadInfo.h in Headers */,
 				F2F04679226239F900FA7A3F /* PLCrashReportRegisterInfo.h in Headers */,
 				F2F0467A226239F900FA7A3F /* PLCrashReportBinaryImageInfo.h in Headers */,
@@ -3151,6 +3558,7 @@
 				F2F0469D226239F900FA7A3F /* dwarf_stack.hpp in Headers */,
 				F2F0469E226239F900FA7A3F /* dwarf_opstream.hpp in Headers */,
 				F2F0469F226239F900FA7A3F /* PLCrashAsyncDwarfCFAState.hpp in Headers */,
+				2ABCA8712357794E00092C09 /* protobuf-c.h in Headers */,
 				F2F046A0226239F900FA7A3F /* PLCrashFrameDWARFUnwind.h in Headers */,
 				F2F046A1226239F900FA7A3F /* PLCrashProcessInfo.h in Headers */,
 				F2F046A2226239F900FA7A3F /* PLCrashAsyncAllocator.h in Headers */,
@@ -3524,7 +3932,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ABCA87F2357794E00092C09 /* TODO in Resources */,
+				2ABCA8A52357794E00092C09 /* libprotobuf-c.pc in Resources */,
+				2ABCA8682357794E00092C09 /* ChangeLog in Resources */,
+				2ABCA8522357794E00092C09 /* LICENSE in Resources */,
+				2ABCA88A2357794E00092C09 /* README.md in Resources */,
+				2ABCA8472357794E00092C09 /* INSTALL_RECEIPT.json in Resources */,
 				057CD98616CD5D5C0067E670 /* Default-568h@2x.png in Resources */,
+				2ABCA85D2357794E00092C09 /* protoc-c in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3532,6 +3947,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ABCA8A62357794E00092C09 /* libprotobuf-c.pc in Resources */,
+				2ABCA88B2357794E00092C09 /* README.md in Resources */,
+				2ABCA8532357794E00092C09 /* LICENSE in Resources */,
+				2ABCA8802357794E00092C09 /* TODO in Resources */,
+				2ABCA8692357794E00092C09 /* ChangeLog in Resources */,
+				2ABCA85E2357794E00092C09 /* protoc-c in Resources */,
+				2ABCA8482357794E00092C09 /* INSTALL_RECEIPT.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3539,7 +3961,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ABCA8792357794E00092C09 /* TODO in Resources */,
+				2ABCA89F2357794E00092C09 /* libprotobuf-c.pc in Resources */,
+				2ABCA8622357794E00092C09 /* ChangeLog in Resources */,
+				2ABCA84C2357794E00092C09 /* LICENSE in Resources */,
+				2ABCA8842357794E00092C09 /* README.md in Resources */,
+				2ABCA8412357794E00092C09 /* INSTALL_RECEIPT.json in Resources */,
 				05F3CD6D16DE7625007911FB /* Tests in Resources */,
+				2ABCA8572357794E00092C09 /* protoc-c in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3547,7 +3976,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ABCA87C2357794E00092C09 /* TODO in Resources */,
+				2ABCA8A22357794E00092C09 /* libprotobuf-c.pc in Resources */,
+				2ABCA8652357794E00092C09 /* ChangeLog in Resources */,
+				2ABCA84F2357794E00092C09 /* LICENSE in Resources */,
+				2ABCA8872357794E00092C09 /* README.md in Resources */,
+				2ABCA8442357794E00092C09 /* INSTALL_RECEIPT.json in Resources */,
 				05F3CD6E16DE7625007911FB /* Tests in Resources */,
+				2ABCA85A2357794E00092C09 /* protoc-c in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3556,7 +3992,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				057CD98716CD5D7A0067E670 /* Default-568h@2x.png in Resources */,
+				2ABCA8662357794E00092C09 /* ChangeLog in Resources */,
 				05F3CD6F16DE7625007911FB /* Tests in Resources */,
+				2ABCA8502357794E00092C09 /* LICENSE in Resources */,
+				2ABCA87D2357794E00092C09 /* TODO in Resources */,
+				2ABCA8452357794E00092C09 /* INSTALL_RECEIPT.json in Resources */,
+				2ABCA8882357794E00092C09 /* README.md in Resources */,
+				2ABCA8A32357794E00092C09 /* libprotobuf-c.pc in Resources */,
+				2ABCA85B2357794E00092C09 /* protoc-c in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3564,6 +4007,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ABCA8A42357794E00092C09 /* libprotobuf-c.pc in Resources */,
+				2ABCA8892357794E00092C09 /* README.md in Resources */,
+				2ABCA8512357794E00092C09 /* LICENSE in Resources */,
+				2ABCA87E2357794E00092C09 /* TODO in Resources */,
+				2ABCA8672357794E00092C09 /* ChangeLog in Resources */,
+				2ABCA85C2357794E00092C09 /* protoc-c in Resources */,
+				2ABCA8462357794E00092C09 /* INSTALL_RECEIPT.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3571,6 +4021,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ABCA89C2357794E00092C09 /* libprotobuf-c.pc in Resources */,
+				2ABCA8812357794E00092C09 /* README.md in Resources */,
+				2ABCA8492357794E00092C09 /* LICENSE in Resources */,
+				2ABCA8762357794E00092C09 /* TODO in Resources */,
+				2ABCA85F2357794E00092C09 /* ChangeLog in Resources */,
+				2ABCA8542357794E00092C09 /* protoc-c in Resources */,
+				2ABCA83E2357794E00092C09 /* INSTALL_RECEIPT.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3578,7 +4035,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ABCA87B2357794E00092C09 /* TODO in Resources */,
+				2ABCA8A12357794E00092C09 /* libprotobuf-c.pc in Resources */,
+				2ABCA8642357794E00092C09 /* ChangeLog in Resources */,
+				2ABCA84E2357794E00092C09 /* LICENSE in Resources */,
+				2ABCA8862357794E00092C09 /* README.md in Resources */,
+				2ABCA8432357794E00092C09 /* INSTALL_RECEIPT.json in Resources */,
 				F213F04F2265B4FD005758A5 /* Tests in Resources */,
+				2ABCA8592357794E00092C09 /* protoc-c in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3586,6 +4050,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ABCA89E2357794E00092C09 /* libprotobuf-c.pc in Resources */,
+				2ABCA8832357794E00092C09 /* README.md in Resources */,
+				2ABCA84B2357794E00092C09 /* LICENSE in Resources */,
+				2ABCA8782357794E00092C09 /* TODO in Resources */,
+				2ABCA8612357794E00092C09 /* ChangeLog in Resources */,
+				2ABCA8562357794E00092C09 /* protoc-c in Resources */,
+				2ABCA8402357794E00092C09 /* INSTALL_RECEIPT.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3593,7 +4064,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ABCA87A2357794E00092C09 /* TODO in Resources */,
+				2ABCA8A02357794E00092C09 /* libprotobuf-c.pc in Resources */,
+				2ABCA8632357794E00092C09 /* ChangeLog in Resources */,
+				2ABCA84D2357794E00092C09 /* LICENSE in Resources */,
+				2ABCA8852357794E00092C09 /* README.md in Resources */,
+				2ABCA8422357794E00092C09 /* INSTALL_RECEIPT.json in Resources */,
 				F292709E2262348F00E1048A /* Tests in Resources */,
+				2ABCA8582357794E00092C09 /* protoc-c in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3601,6 +4079,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ABCA89D2357794E00092C09 /* libprotobuf-c.pc in Resources */,
+				2ABCA8822357794E00092C09 /* README.md in Resources */,
+				2ABCA84A2357794E00092C09 /* LICENSE in Resources */,
+				2ABCA8772357794E00092C09 /* TODO in Resources */,
+				2ABCA8602357794E00092C09 /* ChangeLog in Resources */,
+				2ABCA8552357794E00092C09 /* protoc-c in Resources */,
+				2ABCA83F2357794E00092C09 /* INSTALL_RECEIPT.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3673,6 +4158,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ABCA9162357794F00092C09 /* protobuf-c.c in Sources */,
 				050DE2A90F61BD8D00152ED3 /* fuzz-main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3681,6 +4167,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ABCA9142357794F00092C09 /* protobuf-c.c in Sources */,
 				052A45DA1363542800987004 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3689,6 +4176,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ABCA9152357794F00092C09 /* protobuf-c.c in Sources */,
 				052A4649136355FD00987004 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3707,7 +4195,6 @@
 				05F40ACC0EF7379F008050CF /* PLCrashReporter.m in Sources */,
 				05F411A90EF8DA31008050CF /* PLCrashReport.m in Sources */,
 				05F411F40EF8DFDA008050CF /* crash_report.proto in Sources */,
-				05F411FB0EF8E023008050CF /* protobuf-c.c in Sources */,
 				05F413480EF995C0008050CF /* PLCrashReportSystemInfo.m in Sources */,
 				05F414230EF9A6C4008050CF /* PLCrashReportApplicationInfo.m in Sources */,
 				05F414870EF9BFAC008050CF /* PLCrashReportThreadInfo.m in Sources */,
@@ -3746,6 +4233,7 @@
 				05E748611760D64D009B8745 /* PLCrashAsyncDwarfFDE.cpp in Sources */,
 				0576DAC01B41E227000BCA73 /* DynamicLoader.cpp in Sources */,
 				05E748691760D891009B8745 /* PLCrashAsyncDwarfCIE.cpp in Sources */,
+				2ABCA90E2357794F00092C09 /* protobuf-c.c in Sources */,
 				05E7487D176118C2009B8745 /* PLCrashAsyncDwarfCFAStateEvaluation.cpp in Sources */,
 				05E7488F176135CF009B8745 /* PLCrashAsyncDwarfExpression.cpp in Sources */,
 				05E748A917616D30009B8745 /* dwarf_stack.cpp in Sources */,
@@ -3777,7 +4265,6 @@
 				05CD36D20EF25717000FDE88 /* PLCrashLogWriterEncoding.c in Sources */,
 				05F40ACB0EF7379F008050CF /* PLCrashReporter.m in Sources */,
 				05F411A70EF8DA31008050CF /* PLCrashReport.m in Sources */,
-				05F411F70EF8E001008050CF /* protobuf-c.c in Sources */,
 				05F411F50EF8DFE4008050CF /* crash_report.proto in Sources */,
 				05F413460EF995C0008050CF /* PLCrashReportSystemInfo.m in Sources */,
 				05F4141F0EF9A6C4008050CF /* PLCrashReportApplicationInfo.m in Sources */,
@@ -3818,6 +4305,7 @@
 				05E748621760D64D009B8745 /* PLCrashAsyncDwarfFDE.cpp in Sources */,
 				0576DAC11B41E227000BCA73 /* DynamicLoader.cpp in Sources */,
 				05E7486A1760D891009B8745 /* PLCrashAsyncDwarfCIE.cpp in Sources */,
+				2ABCA90F2357794F00092C09 /* protobuf-c.c in Sources */,
 				05E7487E176118C2009B8745 /* PLCrashAsyncDwarfCFAStateEvaluation.cpp in Sources */,
 				05E74890176135CF009B8745 /* PLCrashAsyncDwarfExpression.cpp in Sources */,
 				05E748AA17616D30009B8745 /* dwarf_stack.cpp in Sources */,
@@ -3857,7 +4345,6 @@
 				05CD364A0EF247A9000FDE88 /* PLCrashAsyncTests.m in Sources */,
 				05CD36CE0EF25717000FDE88 /* PLCrashLogWriterEncoding.c in Sources */,
 				05F40ADE0EF73A39008050CF /* PLCrashReporterTests.m in Sources */,
-				05F40F840EF850FC008050CF /* protobuf-c.c in Sources */,
 				05F411AD0EF8DE68008050CF /* PLCrashReportTests.m in Sources */,
 				05E734890EFAD85A005EDFB7 /* PLCrashAsyncSignalInfo.c in Sources */,
 				05E734840EFAD83B005EDFB7 /* PLCrashAsyncSignalInfoTests.m in Sources */,
@@ -3924,6 +4411,7 @@
 				05507A10177CC456009D5168 /* unwind_test_harness.c in Sources */,
 				05507A14177CC4D5009D5168 /* unwind_test_x86.S in Sources */,
 				05507A18177CC50B009D5168 /* unwind_test_x86_64.S in Sources */,
+				2ABCA90A2357794F00092C09 /* protobuf-c.c in Sources */,
 				0576DAAC1B3E0C74000BCA73 /* AsyncAllocatableTests.mm in Sources */,
 				05507A1C177CC913009D5168 /* unwind_test_x86_64_disable_compact_frame.S in Sources */,
 				05507A3F178364E8009D5168 /* unwind_test_x86_64_frame.S in Sources */,
@@ -3969,8 +4457,8 @@
 				05CD36450EF24758000FDE88 /* PLCrashAsync.c in Sources */,
 				05CD364B0EF247A9000FDE88 /* PLCrashAsyncTests.m in Sources */,
 				05CD36D00EF25717000FDE88 /* PLCrashLogWriterEncoding.c in Sources */,
+				2ABCA9112357794F00092C09 /* protobuf-c.c in Sources */,
 				05F40ADF0EF73A39008050CF /* PLCrashReporterTests.m in Sources */,
-				05F40F850EF850FC008050CF /* protobuf-c.c in Sources */,
 				0576DAFD1B430285000BCA73 /* PLCrashAsyncDynamicLoader.cpp in Sources */,
 				05F411AE0EF8DE68008050CF /* PLCrashReportTests.m in Sources */,
 				05E734880EFAD854005EDFB7 /* PLCrashAsyncSignalInfo.c in Sources */,
@@ -4080,13 +4568,13 @@
 				05CD36490EF247A9000FDE88 /* PLCrashAsyncTests.m in Sources */,
 				05CD36CF0EF25717000FDE88 /* PLCrashLogWriterEncoding.c in Sources */,
 				05F40AE00EF73A39008050CF /* PLCrashReporterTests.m in Sources */,
-				05F40F860EF850FC008050CF /* protobuf-c.c in Sources */,
 				05F411AF0EF8DE68008050CF /* PLCrashReportTests.m in Sources */,
 				05E734870EFAD84B005EDFB7 /* PLCrashAsyncSignalInfo.c in Sources */,
 				05E734860EFAD83B005EDFB7 /* PLCrashAsyncSignalInfoTests.m in Sources */,
 				05BB84911364EE1500D53B84 /* PLCrashSysctlTests.m in Sources */,
 				0576DAC41B41E227000BCA73 /* DynamicLoader.cpp in Sources */,
 				0576DACC1B41EA12000BCA73 /* DynamicLoaderTests.mm in Sources */,
+				2ABCA9122357794F00092C09 /* protobuf-c.c in Sources */,
 				059C9D7613AE46C50071956F /* PLCrashSysctl.c in Sources */,
 				05EB2B1915B6FDA80066EB4D /* PLCrashReporterNSError.m in Sources */,
 				05EB2B1E15B6FE2A0066EB4D /* PLCrashReporterNSErrorTests.m in Sources */,
@@ -4175,6 +4663,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ABCA9102357794F00092C09 /* protobuf-c.c in Sources */,
 				05E7321D0EFA1BE1005EDFB7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -4192,7 +4681,6 @@
 				05E732000EFA1AE3005EDFB7 /* PLCrashReporter.m in Sources */,
 				05E732010EFA1AE3005EDFB7 /* PLCrashReport.m in Sources */,
 				05E732020EFA1AE3005EDFB7 /* crash_report.proto in Sources */,
-				05E732030EFA1AE3005EDFB7 /* protobuf-c.c in Sources */,
 				05E732040EFA1AE3005EDFB7 /* PLCrashReportSystemInfo.m in Sources */,
 				05E732050EFA1AE3005EDFB7 /* PLCrashReportApplicationInfo.m in Sources */,
 				05E732060EFA1AE3005EDFB7 /* PLCrashReportThreadInfo.m in Sources */,
@@ -4240,6 +4728,7 @@
 				057C9BC017970F77006B242E /* PLCrashAsyncDwarfExpression.cpp in Sources */,
 				057C9BBE17970F54006B242E /* PLCrashFrameDWARFUnwind.cpp in Sources */,
 				05102E2817B2B80A00B5D925 /* PLCrashHostInfo.m in Sources */,
+				2ABCA90D2357794F00092C09 /* protobuf-c.c in Sources */,
 				0527062F17CBCCA100E6A5D8 /* PLCrashMachExceptionPort.m in Sources */,
 				0576DAF81B430285000BCA73 /* PLCrashAsyncDynamicLoader.cpp in Sources */,
 				05BEC41B17BAF92A0082CBFB /* PLCrashMachExceptionPortSet.m in Sources */,
@@ -4256,6 +4745,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ABCA9132357794F00092C09 /* protobuf-c.c in Sources */,
 				05F40CF20EF7AC0E008050CF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -4273,7 +4763,6 @@
 				05F40ACD0EF7379F008050CF /* PLCrashReporter.m in Sources */,
 				05F411AB0EF8DA31008050CF /* PLCrashReport.m in Sources */,
 				05F411F30EF8DFD3008050CF /* crash_report.proto in Sources */,
-				05F411F90EF8E013008050CF /* protobuf-c.c in Sources */,
 				05F4134A0EF995C0008050CF /* PLCrashReportSystemInfo.m in Sources */,
 				05F414210EF9A6C4008050CF /* PLCrashReportApplicationInfo.m in Sources */,
 				05F414850EF9BFAC008050CF /* PLCrashReportThreadInfo.m in Sources */,
@@ -4321,6 +4810,7 @@
 				05C76DC9176FBAF300E9B10D /* PLCrashAsyncDwarfCFAState.cpp in Sources */,
 				05920D20177B9257001E8975 /* PLCrashFrameDWARFUnwind.cpp in Sources */,
 				05102E1917B0151000B5D925 /* PLCrashProcessInfo.m in Sources */,
+				2ABCA9072357794F00092C09 /* protobuf-c.c in Sources */,
 				05102E2917B2B80A00B5D925 /* PLCrashHostInfo.m in Sources */,
 				0576DAF91B430285000BCA73 /* PLCrashAsyncDynamicLoader.cpp in Sources */,
 				051F067E17B6B0D4006D0EFA /* PLCrashMachExceptionPort.m in Sources */,
@@ -4353,7 +4843,6 @@
 				F213F0602265B4FD005758A5 /* PLCrashAsyncTests.m in Sources */,
 				F213F0612265B4FD005758A5 /* PLCrashLogWriterEncoding.c in Sources */,
 				F213F0622265B4FD005758A5 /* PLCrashReporterTests.m in Sources */,
-				F213F0632265B4FD005758A5 /* protobuf-c.c in Sources */,
 				F213F0642265B4FD005758A5 /* PLCrashReportTests.m in Sources */,
 				F213F0652265B4FD005758A5 /* PLCrashAsyncSignalInfo.c in Sources */,
 				F213F0662265B4FD005758A5 /* PLCrashAsyncSignalInfoTests.m in Sources */,
@@ -4376,6 +4865,7 @@
 				F213F0772265B4FD005758A5 /* PLCrashMachExceptionServerTests.m in Sources */,
 				F213F0782265B4FD005758A5 /* PLCrashLogWriterEncodingTests.m in Sources */,
 				F213F0792265B4FD005758A5 /* PLCrashLogWriterEncodingTests.proto in Sources */,
+				2ABCA90C2357794F00092C09 /* protobuf-c.c in Sources */,
 				F213F07A2265B4FD005758A5 /* AsyncPageAllocatorTests.mm in Sources */,
 				F213F07B2265B4FD005758A5 /* AsyncAllocator.cpp in Sources */,
 				F213F07C2265B4FD005758A5 /* AsyncAllocatorTests.mm in Sources */,
@@ -4459,7 +4949,6 @@
 				F2927053226231A600E1048A /* PLCrashReporter.m in Sources */,
 				F2927054226231A600E1048A /* PLCrashReport.m in Sources */,
 				F2927055226231A600E1048A /* crash_report.proto in Sources */,
-				F2927056226231A600E1048A /* protobuf-c.c in Sources */,
 				F2927057226231A600E1048A /* PLCrashReportSystemInfo.m in Sources */,
 				F2927058226231A600E1048A /* PLCrashReportApplicationInfo.m in Sources */,
 				F2927059226231A600E1048A /* PLCrashReportThreadInfo.m in Sources */,
@@ -4499,6 +4988,7 @@
 				F292707C226231A600E1048A /* PLCrashAsyncAllocator.cpp in Sources */,
 				F292707D226231A600E1048A /* PLCrashAsyncDwarfFDE.cpp in Sources */,
 				F292707E226231A600E1048A /* PLCrashAsyncDwarfCIE.cpp in Sources */,
+				2ABCA9092357794F00092C09 /* protobuf-c.c in Sources */,
 				F292707F226231A600E1048A /* PLCrashAsyncDwarfCFAStateEvaluation.cpp in Sources */,
 				F2927080226231A600E1048A /* PLCrashAsyncDwarfExpression.cpp in Sources */,
 				F2927081226231A600E1048A /* dwarf_stack.cpp in Sources */,
@@ -4539,7 +5029,6 @@
 				F29270AF2262348F00E1048A /* PLCrashAsyncTests.m in Sources */,
 				F29270B02262348F00E1048A /* PLCrashLogWriterEncoding.c in Sources */,
 				F29270B12262348F00E1048A /* PLCrashReporterTests.m in Sources */,
-				F29270B22262348F00E1048A /* protobuf-c.c in Sources */,
 				F29270B32262348F00E1048A /* PLCrashReportTests.m in Sources */,
 				F29270B42262348F00E1048A /* PLCrashAsyncSignalInfo.c in Sources */,
 				F29270B52262348F00E1048A /* PLCrashAsyncSignalInfoTests.m in Sources */,
@@ -4561,6 +5050,7 @@
 				F29270C52262348F00E1048A /* PLCrashAsyncMachOStringTests.m in Sources */,
 				F29270C72262348F00E1048A /* PLCrashLogWriterEncodingTests.m in Sources */,
 				F29270C82262348F00E1048A /* PLCrashLogWriterEncodingTests.proto in Sources */,
+				2ABCA90B2357794F00092C09 /* protobuf-c.c in Sources */,
 				F29270C92262348F00E1048A /* AsyncPageAllocatorTests.mm in Sources */,
 				F29270CA2262348F00E1048A /* AsyncAllocator.cpp in Sources */,
 				F29270CB2262348F00E1048A /* AsyncAllocatorTests.mm in Sources */,
@@ -4644,7 +5134,6 @@
 				F2F046B2226239F900FA7A3F /* PLCrashReporter.m in Sources */,
 				F2F046B3226239F900FA7A3F /* PLCrashReport.m in Sources */,
 				F2F046B4226239F900FA7A3F /* crash_report.proto in Sources */,
-				F2F046B5226239F900FA7A3F /* protobuf-c.c in Sources */,
 				F2F046B6226239F900FA7A3F /* PLCrashReportSystemInfo.m in Sources */,
 				F2F046B7226239F900FA7A3F /* PLCrashReportApplicationInfo.m in Sources */,
 				F2F046B8226239F900FA7A3F /* PLCrashReportThreadInfo.m in Sources */,
@@ -4684,6 +5173,7 @@
 				F2F046DA226239F900FA7A3F /* PLCrashAsyncAllocator.cpp in Sources */,
 				F2F046DB226239F900FA7A3F /* PLCrashAsyncDwarfFDE.cpp in Sources */,
 				F2F046DC226239F900FA7A3F /* PLCrashAsyncDwarfCIE.cpp in Sources */,
+				2ABCA9082357794F00092C09 /* protobuf-c.c in Sources */,
 				F2F046DD226239F900FA7A3F /* PLCrashAsyncDwarfCFAStateEvaluation.cpp in Sources */,
 				F2F046DE226239F900FA7A3F /* PLCrashAsyncDwarfExpression.cpp in Sources */,
 				F2F046DF226239F900FA7A3F /* dwarf_stack.cpp in Sources */,
@@ -4822,6 +5312,10 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INSTALL_PATH = /usr/local/bin;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Dependencies/protobuf-c-1.3.2/lib",
+				);
 				OTHER_LDFLAGS = (
 					"-framework",
 					Foundation,
@@ -4843,6 +5337,10 @@
 				EFFECTIVE_PLATFORM_NAME = "-MacOSX";
 				GCC_MODEL_TUNING = G5;
 				INSTALL_PATH = /usr/local/bin;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Dependencies/protobuf-c-1.3.2/lib",
+				);
 				OTHER_LDFLAGS = (
 					"-framework",
 					Foundation,
@@ -4872,6 +5370,10 @@
 				INFOPLIST_FILE = "Resources/DemoCrash-iOS-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				IPHONEOS_DEPLOYMENT_TARGET = "$(PL_IOS_DEPLOYMENT_TARGET)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Dependencies/protobuf-c-1.3.2/lib",
+				);
 				OTHER_LDFLAGS = (
 					"-framework",
 					Foundation,
@@ -4899,6 +5401,10 @@
 				INFOPLIST_FILE = "Resources/DemoCrash-iOS-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				IPHONEOS_DEPLOYMENT_TARGET = "$(PL_IOS_DEPLOYMENT_TARGET)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Dependencies/protobuf-c-1.3.2/lib",
+				);
 				OTHER_LDFLAGS = (
 					"-framework",
 					Foundation,
@@ -4927,6 +5433,10 @@
 				INFOPLIST_FILE = "Resources/DemoCrash-iOS-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				IPHONEOS_DEPLOYMENT_TARGET = "$(PL_IOS_DEPLOYMENT_TARGET)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Dependencies/protobuf-c-1.3.2/lib",
+				);
 				MACOSX_DEPLOYMENT_TARGET = "";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
@@ -4955,6 +5465,10 @@
 				INFOPLIST_FILE = "Resources/DemoCrash-iOS-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				IPHONEOS_DEPLOYMENT_TARGET = "$(PL_IOS_DEPLOYMENT_TARGET)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Dependencies/protobuf-c-1.3.2/lib",
+				);
 				MACOSX_DEPLOYMENT_TARGET = "";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
@@ -5002,6 +5516,10 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_THUMB_SUPPORT = NO;
 				IPHONEOS_DEPLOYMENT_TARGET = "$(PL_IOS_DEPLOYMENT_TARGET)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Dependencies/protobuf-c-1.3.2/lib",
+				);
 				MACH_O_TYPE = staticlib;
 				ONLY_ACTIVE_ARCH = NO;
 				PL_IOS_DEPLOYMENT_TARGET = 9.3;
@@ -5022,6 +5540,10 @@
 				EXPORTED_SYMBOLS_FILE = Resources/CrashReporter.exp;
 				GCC_THUMB_SUPPORT = NO;
 				IPHONEOS_DEPLOYMENT_TARGET = "$(PL_IOS_DEPLOYMENT_TARGET)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Dependencies/protobuf-c-1.3.2/lib",
+				);
 				MACH_O_TYPE = staticlib;
 				ONLY_ACTIVE_ARCH = NO;
 				PL_IOS_DEPLOYMENT_TARGET = 9.3;
@@ -5044,6 +5566,10 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				IPHONEOS_DEPLOYMENT_TARGET = "$(PL_IOS_DEPLOYMENT_TARGET)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Dependencies/protobuf-c-1.3.2/lib",
+				);
 				MACH_O_TYPE = staticlib;
 				ONLY_ACTIVE_ARCH = NO;
 				PL_IOS_DEPLOYMENT_TARGET = 9.3;
@@ -5062,6 +5588,10 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				EXPORTED_SYMBOLS_FILE = Resources/CrashReporter.exp;
 				IPHONEOS_DEPLOYMENT_TARGET = "$(PL_IOS_DEPLOYMENT_TARGET)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Dependencies/protobuf-c-1.3.2/lib",
+				);
 				MACH_O_TYPE = staticlib;
 				ONLY_ACTIVE_ARCH = NO;
 				PL_IOS_DEPLOYMENT_TARGET = 9.3;
@@ -5111,6 +5641,10 @@
 				INFOPLIST_FILE = "Resources/Tests-MacOSX-Info.plist";
 				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Dependencies/protobuf-c-1.3.2/lib",
+				);
 				PRODUCT_NAME = "Tests-MacOSX";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -5145,6 +5679,10 @@
 				INFOPLIST_FILE = "Resources/Tests-MacOSX-Info.plist";
 				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Dependencies/protobuf-c-1.3.2/lib",
+				);
 				PRODUCT_NAME = "Tests-MacOSX";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -5181,6 +5719,10 @@
 				INFOPLIST_FILE = "Resources/Tests-iPhone-Info.plist";
 				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
 				IPHONEOS_DEPLOYMENT_TARGET = "$(PL_IOS_DEPLOYMENT_TARGET)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Dependencies/protobuf-c-1.3.2/lib",
+				);
 				MACOSX_DEPLOYMENT_TARGET = "";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
@@ -5215,6 +5757,10 @@
 				INFOPLIST_FILE = "Resources/Tests-iPhone-Info.plist";
 				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
 				IPHONEOS_DEPLOYMENT_TARGET = "$(PL_IOS_DEPLOYMENT_TARGET)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Dependencies/protobuf-c-1.3.2/lib",
+				);
 				MACOSX_DEPLOYMENT_TARGET = "";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
@@ -5253,6 +5799,10 @@
 				INFOPLIST_FILE = "Resources/Tests-iPhone-Info.plist";
 				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
 				IPHONEOS_DEPLOYMENT_TARGET = "$(PL_IOS_DEPLOYMENT_TARGET)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Dependencies/protobuf-c-1.3.2/lib",
+				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -5289,6 +5839,10 @@
 				INFOPLIST_FILE = "Resources/Tests-iPhone-Info.plist";
 				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
 				IPHONEOS_DEPLOYMENT_TARGET = "$(PL_IOS_DEPLOYMENT_TARGET)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Dependencies/protobuf-c-1.3.2/lib",
+				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -5319,6 +5873,10 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INSTALL_PATH = /usr/local/bin;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Dependencies/protobuf-c-1.3.2/lib",
+				);
 				OTHER_LDFLAGS = (
 					"-framework",
 					Foundation,
@@ -5339,6 +5897,10 @@
 				EFFECTIVE_PLATFORM_NAME = "-MacOSX";
 				GCC_MODEL_TUNING = G5;
 				INSTALL_PATH = /usr/local/bin;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Dependencies/protobuf-c-1.3.2/lib",
+				);
 				OTHER_LDFLAGS = (
 					"-framework",
 					Foundation,
@@ -5364,6 +5926,10 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Dependencies/protobuf-c-1.3.2/lib",
+				);
 				OTHER_CFLAGS = (
 					"$(inherited)",
 					"-DPLCF_MIN_MACOSX_SDK=$(PL_MIN_MACOSX_SDK)",
@@ -5392,6 +5958,10 @@
 				EXPORTED_SYMBOLS_FILE = Resources/CrashReporter.exp;
 				GCC_MODEL_TUNING = G5;
 				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Dependencies/protobuf-c-1.3.2/lib",
+				);
 				OTHER_CFLAGS = (
 					"$(inherited)",
 					"-DPLCF_MIN_MACOSX_SDK=$(PL_MIN_MACOSX_SDK)",
@@ -5424,6 +5994,10 @@
 				INFOPLIST_FILE = "Resources/DemoCrash-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Dependencies/protobuf-c-1.3.2/lib",
+				);
 				OTHER_LDFLAGS = (
 					"-framework",
 					Foundation,
@@ -5450,6 +6024,10 @@
 				INFOPLIST_FILE = "Resources/DemoCrash-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Dependencies/protobuf-c-1.3.2/lib",
+				);
 				OTHER_LDFLAGS = (
 					"-framework",
 					Foundation,
@@ -5482,6 +6060,10 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = Resources/Info.plist;
 				INSTALL_PATH = "@rpath";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Dependencies/protobuf-c-1.3.2/lib",
+				);
 				OTHER_CFLAGS = (
 					"$(inherited)",
 					"-DPLCF_MIN_MACOSX_SDK=$(PL_MIN_MACOSX_SDK)",
@@ -5510,6 +6092,10 @@
 				GCC_MODEL_TUNING = G5;
 				INFOPLIST_FILE = Resources/Info.plist;
 				INSTALL_PATH = "@rpath";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Dependencies/protobuf-c-1.3.2/lib",
+				);
 				OTHER_CFLAGS = (
 					"$(inherited)",
 					"-DPLCF_MIN_MACOSX_SDK=$(PL_MIN_MACOSX_SDK)",
@@ -5633,6 +6219,10 @@
 				INFOPLIST_FILE = "Resources/Tests-tvOS-Info.plist";
 				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Dependencies/protobuf-c-1.3.2/lib",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
@@ -5668,6 +6258,10 @@
 				INFOPLIST_FILE = "Resources/Tests-tvOS-Info.plist";
 				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Dependencies/protobuf-c-1.3.2/lib",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
@@ -5707,6 +6301,10 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				INSTALL_PATH = "@rpath";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Dependencies/protobuf-c-1.3.2/lib",
+				);
 				OTHER_CFLAGS = (
 					"$(inherited)",
 					"-DPLCF_MIN_MACOSX_SDK=$(PL_MIN_MACOSX_SDK)",
@@ -5736,6 +6334,10 @@
 				GCC_MODEL_TUNING = G5;
 				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				INSTALL_PATH = "@rpath";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Dependencies/protobuf-c-1.3.2/lib",
+				);
 				OTHER_CFLAGS = (
 					"$(inherited)",
 					"-DPLCF_MIN_MACOSX_SDK=$(PL_MIN_MACOSX_SDK)",
@@ -5769,6 +6371,10 @@
 				INFOPLIST_FILE = "Resources/Tests-iPhone-Info.plist";
 				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Dependencies/protobuf-c-1.3.2/lib",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -5806,6 +6412,10 @@
 				INFOPLIST_FILE = "Resources/Tests-iPhone-Info.plist";
 				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Dependencies/protobuf-c-1.3.2/lib",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -5844,6 +6454,10 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = Resources/Info.plist;
 				INSTALL_PATH = "@rpath";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Dependencies/protobuf-c-1.3.2/lib",
+				);
 				OTHER_CFLAGS = (
 					"$(inherited)",
 					"-DPLCF_MIN_MACOSX_SDK=$(PL_MIN_MACOSX_SDK)",
@@ -5873,6 +6487,10 @@
 				GCC_MODEL_TUNING = G5;
 				INFOPLIST_FILE = Resources/Info.plist;
 				INSTALL_PATH = "@rpath";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Dependencies/protobuf-c-1.3.2/lib",
+				);
 				OTHER_CFLAGS = (
 					"$(inherited)",
 					"-DPLCF_MIN_MACOSX_SDK=$(PL_MIN_MACOSX_SDK)",
